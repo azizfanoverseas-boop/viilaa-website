@@ -18,7 +18,7 @@
     "Technology & Quality": ["技术与质量", "기술 및 품질"],
     "Discover Viilaa": ["走进中锡", "Viilaa 알아보기"],
     "Viilaa · Advanced Materials": ["中锡金属 · 先进材料", "Viilaa · 첨단 소재"],
-    "Purity at the core. Materials built for progress.": ["以纯度为核心，以材料推动进步。", "순도를 핵심으로, 진보를 위한 소재를 만듭니다."],
+    "Purity at the core. Materials built for progress.": ["以纯度为核心，\n以材料推动进步。", "순도를 핵심으로, 진보를 위한 소재를 만듭니다."],
     "Based in Ganzhou, Jiangxi, we develop and manufacture rare metals and advanced materials for semiconductor, display, photovoltaic, electronics, infrared and research applications.": ["我们立足江西赣州，研发与制造面向半导体、显示、光伏、电子、红外及科研应用的稀有金属与先进材料。", "중국 장시성 간저우를 기반으로 반도체, 디스플레이, 태양광, 전자, 적외선 및 연구용 희소금속과 첨단 소재를 개발·제조합니다."],
     "Explore Products": ["查看产品", "제품 보기"],
     "Talk to our team →": ["联系我们 →", "문의하기 →"],
