@@ -1,0 +1,20 @@
+{
+  "productImageStyleV2": {
+    "canvas": [
+      960,
+      640
+    ],
+    "backgrounds": [
+      {
+        "name": "white",
+        "color": "#ffffff"
+      },
+      {
+        "name": "dark",
+        "color": "#12161a"
+      }
+    ],
+    "preferredBackground": "dark",
+    "commentingMethod": "Use review IDs HP-01 etc and grid coordinates A1-D3 on review-high-purity-dark-grid.html."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "productImageStyleV3": {
+    "preferredBackground": "dark",
+    "canvas": [
+      960,
+      640
+    ],
+    "darkBackground": "#12161a",
+    "notes": "V3 dark-only clean reference-photo render; no artificial cast shadow."
+  }
+}

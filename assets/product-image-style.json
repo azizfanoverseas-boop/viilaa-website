@@ -1,0 +1,14 @@
+{
+  "productImageStyle": {
+    "version": "real-photo-render-v1-20260706",
+    "canvas": [
+      960,
+      640
+    ],
+    "top": "#f4f5f2",
+    "table": "#e7e8e4",
+    "horizon": "#d9ddd9",
+    "shadow": "rgba(25, 28, 30, 0.24)",
+    "notes": "Use this same light gray studio tabletop background for future product image rendering."
+  }
+}

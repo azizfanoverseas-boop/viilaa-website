@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>High-Purity Metal Dark Background Review Grid V3</title>
+    <style>
+      :root {
+        --ink: #16222c;
+        --muted: #647482;
+        --line: #d9e1e4;
+        --paper: #f6f7f7;
+        --dark: #12161a;
+        --blue: #2585ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        padding: 22px 32px;
+        background: rgba(246, 247, 247, 0.96);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(10px);
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(28px, 4vw, 44px);
+        letter-spacing: 0;
+      }
+      header p {
+        max-width: 980px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.65;
+      }
+      main {
+        display: grid;
+        gap: 28px;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 30px 24px 80px;
+      }
+      article {
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+      .card-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 18px 20px;
+        border-bottom: 1px solid var(--line);
+      }
+      .code {
+        display: inline-flex;
+        margin: 0 0 6px;
+        padding: 5px 8px;
+        color: #fff;
+        background: var(--blue);
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 800;
+      }
+      h2 { margin: 0; font-size: 24px; }
+      code {
+        max-width: 520px;
+        color: #456073;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+      }
+      .image-frame {
+        position: relative;
+        overflow: hidden;
+        background: var(--dark);
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .grid-overlay {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(to right, rgba(37, 133, 255, 0.75) 1px, transparent 1px) 25% 0 / 25% 100%,
+          linear-gradient(to bottom, rgba(37, 133, 255, 0.75) 1px, transparent 1px) 0 33.333% / 100% 33.333%;
+        border: 2px solid rgba(37, 133, 255, 0.9);
+      }
+      .cell {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 26px;
+        color: #fff;
+        background: rgba(37, 133, 255, 0.92);
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 800;
+      }
+      .cell-A1 { left: 2%; top: 2%; }
+      .cell-B1 { left: 27%; top: 2%; }
+      .cell-C1 { left: 52%; top: 2%; }
+      .cell-D1 { left: 77%; top: 2%; }
+      .cell-A2 { left: 2%; top: 36%; }
+      .cell-B2 { left: 27%; top: 36%; }
+      .cell-C2 { left: 52%; top: 36%; }
+      .cell-D2 { left: 77%; top: 36%; }
+      .cell-A3 { left: 2%; top: 70%; }
+      .cell-B3 { left: 27%; top: 70%; }
+      .cell-C3 { left: 52%; top: 70%; }
+      .cell-D3 { left: 77%; top: 70%; }
+      .note {
+        padding: 16px 20px 18px;
+        color: var(--muted);
+        font-size: 15px;
+      }
+      @media (max-width: 760px) {
+        .card-head { display: grid; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>High-Purity Metal Dark Background Review Grid V3</h1>
+      <p>V3 keeps the selected dark background, removes visible white/gray residue more aggressively on complex white-background photos, and uses a more conservative cutout for metal blocks to recover missing sides and bottoms.</p>
+    </header>
+    <main>
+      <article id="HP-01">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-01</p>
+            <h2>Cerium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/cerium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/cerium-metal.png" alt="cerium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-01 B2 edge residue" or "HP-01 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-02">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-02</p>
+            <h2>Dysprosium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/dysprosium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/dysprosium-metal.png" alt="dysprosium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-02 B2 edge residue" or "HP-02 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-03">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-03</p>
+            <h2>Dysprosium Metal Distilling High Purity</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/dysprosium-metal-distilling-high-purity.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/dysprosium-metal-distilling-high-purity.png" alt="dysprosium-metal-distilling-high-purity" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-03 B2 edge residue" or "HP-03 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-04">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-04</p>
+            <h2>Erbium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/erbium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/erbium-metal.png" alt="erbium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-04 B2 edge residue" or "HP-04 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-05">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-05</p>
+            <h2>Europium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/europium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/europium-metal.png" alt="europium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-05 B2 edge residue" or "HP-05 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-06">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-06</p>
+            <h2>Gadolinium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/gadolinium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/gadolinium-metal.png" alt="gadolinium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-06 B2 edge residue" or "HP-06 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-07">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-07</p>
+            <h2>Holmium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/holmium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/holmium-metal.png" alt="holmium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-07 B2 edge residue" or "HP-07 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-08">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-08</p>
+            <h2>Lanthanum Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/lanthanum-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/lanthanum-metal.png" alt="lanthanum-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-08 B2 edge residue" or "HP-08 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-09">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-09</p>
+            <h2>Lutetium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/lutetium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/lutetium-metal.png" alt="lutetium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-09 B2 edge residue" or "HP-09 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-10">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-10</p>
+            <h2>Lutetium Metal Distilling High Purity</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/lutetium-metal-distilling-high-purity.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/lutetium-metal-distilling-high-purity.png" alt="lutetium-metal-distilling-high-purity" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-10 B2 edge residue" or "HP-10 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-11">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-11</p>
+            <h2>Neodymium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/neodymium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/neodymium-metal.png" alt="neodymium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-11 B2 edge residue" or "HP-11 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-12">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-12</p>
+            <h2>Praseodymium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/praseodymium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/praseodymium-metal.png" alt="praseodymium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-12 B2 edge residue" or "HP-12 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-13">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-13</p>
+            <h2>Samarium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/samarium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/samarium-metal.png" alt="samarium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-13 B2 edge residue" or "HP-13 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-14">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-14</p>
+            <h2>Scandium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/scandium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/scandium-metal.png" alt="scandium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-14 B2 edge residue" or "HP-14 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-15">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-15</p>
+            <h2>Terbium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/terbium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/terbium-metal.png" alt="terbium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-15 B2 edge residue" or "HP-15 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-16">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-16</p>
+            <h2>Thulium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/thulium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/thulium-metal.png" alt="thulium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-16 B2 edge residue" or "HP-16 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-17">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-17</p>
+            <h2>Ytterbium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/ytterbium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/ytterbium-metal.png" alt="ytterbium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-17 B2 edge residue" or "HP-17 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-18">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-18</p>
+            <h2>Yttrium Metal</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/yttrium-metal.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/yttrium-metal.png" alt="yttrium-metal" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-18 B2 edge residue" or "HP-18 C1 missing metal".
+        </div>
+      </article>
+      <article id="HP-19">
+        <div class="card-head">
+          <div>
+            <p class="code">HP-19</p>
+            <h2>Yttrium Metal Distilling High Purity</h2>
+          </div>
+          <code>assets/product-images/high-purity-photo-renders-v3-dark/yttrium-metal-distilling-high-purity.png</code>
+        </div>
+        <div class="image-frame">
+          <img src="assets/product-images/high-purity-photo-renders-v3-dark/yttrium-metal-distilling-high-purity.png" alt="yttrium-metal-distilling-high-purity" />
+          <div class="grid-overlay" aria-hidden="true">
+            <span class="cell cell-A1">A1</span><span class="cell cell-B1">B1</span><span class="cell cell-C1">C1</span><span class="cell cell-D1">D1</span><span class="cell cell-A2">A2</span><span class="cell cell-B2">B2</span><span class="cell cell-C2">C2</span><span class="cell cell-D2">D2</span><span class="cell cell-A3">A3</span><span class="cell cell-B3">B3</span><span class="cell cell-C3">C3</span><span class="cell cell-D3">D3</span>
+          </div>
+        </div>
+        <div class="note">
+          <strong>How to comment:</strong> example: "HP-19 B2 edge residue" or "HP-19 C1 missing metal".
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
