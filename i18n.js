@@ -28,7 +28,7 @@
     "Location": ["所在地", "소재지"],
     "Ganzhou, Jiangxi": ["江西赣州", "장시성 간저우"],
     "Who we are": ["公司定位", "회사 소개"],
-    "Focused high-purity materials for advanced thin-film manufacturing": ["专注高纯材料，服务先进薄膜制造", "첨단 박막 제조를 위한 고순도 소재에 집중"],
+    "Focused high-purity materials for advanced thin-film manufacturing": ["专注高纯材料\n服务先进薄膜制造", "첨단 박막 제조를 위한 고순도 소재에 집중"],
     "Jiangxi Viilaa Metal Materials Co., Ltd. is a new-materials company specializing in the research, production and sale of rare metals and advanced materials. We support both R&D and industrial customers with high-purity materials and coordinated customization.": ["江西中锡金属材料有限公司成立于2020年，坐落于江西赣州，是一家专注于稀有金属及先进材料研发、生产与销售的新材料企业。我们为研发及产业客户提供高纯材料与定制化产品支持。", "Jiangxi Viilaa Metal Materials Co., Ltd.는 2020년 장시성 간저우에 설립된 신소재 기업으로, 희소금속과 첨단 소재의 연구개발·생산·판매에 주력하며 연구 및 산업 고객에게 고순도 소재와 맞춤형 지원을 제공합니다."],
     "Our work is grounded in metal purification and powder-production experience, with an emphasis on stable products, practical engineering delivery and close collaboration from sample development to scaled application.": ["我们以金属提纯与制粉经验为基础，重视产品稳定性与工程化交付，并为客户从研发样品到批量应用提供深入协同。", "금속 정제와 분말 제조 경험을 기반으로 제품 안정성, 엔지니어링 납품 역량, 연구 샘플부터 양산 적용까지의 긴밀한 협업을 중시합니다."],
     "Two priorities, one dependable materials platform": ["两类核心产品，共享可靠材料平台", "두 가지 핵심 제품, 하나의 신뢰할 수 있는 소재 플랫폼"],
