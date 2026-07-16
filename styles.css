@@ -2598,10 +2598,11 @@ html[data-language="zh"] #portfolio-title { white-space:pre-line; }
 .company-position-copy p+p { margin-top:22px; }
 .company-core { background:#122823; color:#eaf0ed; padding-block:110px; }
 .company-core-inner { display:grid; grid-template-columns:.82fr 1.18fr; gap:8vw; }
-.company-core-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-.company-core-grid article { min-height:390px; padding:36px; display:flex; flex-direction:column; border:1px solid rgba(255,255,255,.15); background:linear-gradient(150deg,rgba(255,255,255,.08),rgba(255,255,255,.015)); }
+.company-core-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.company-core-grid article { min-height:390px; padding:32px; display:flex; flex-direction:column; border:1px solid rgba(255,255,255,.15); background:linear-gradient(150deg,rgba(255,255,255,.08),rgba(255,255,255,.015)); }
 .company-card-index { color:#c8a96b; font-size:.78rem; letter-spacing:.13em; }
 .company-core-grid h3 { margin:58px 0 18px; font-size:1.7rem; }
+html[data-language="zh"] .company-core-grid article:nth-child(2) h3 { white-space:nowrap; }
 .company-core-grid p { color:#b9c7c2; line-height:1.72; }
 .company-core-grid a { color:#e6c681; margin-top:auto; }
 .company-capabilities { padding-block:120px; }
@@ -2654,6 +2655,7 @@ html[data-language="zh"] #portfolio-title { white-space:pre-line; }
   .company-core { padding-block:78px; }
   .company-core-grid,.company-capability-grid,.credential-grid,.patent-theme-grid,.patent-index-grid { grid-template-columns:1fr; }
   .company-core-grid article { min-height:320px; }
+  html[data-language="zh"] .company-core-grid article:nth-child(2) h3 { white-space:normal; }
   .credential-card-featured { grid-column:span 1; }
   .credential-card img,.credential-card-featured img { height:330px; }
   .patent-theme-grid a { grid-template-columns:40% 60%; }
