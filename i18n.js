@@ -36,6 +36,8 @@
     "Rare-earth and rare-metal targets, alloy targets and custom specifications for advanced coating and thin-film processes.": ["提供稀土及稀有金属靶材、合金靶材与定制规格产品，服务先进镀膜和薄膜工艺。", "첨단 코팅 및 박막 공정을 위한 희토류·희소금속 타깃, 합금 타깃 및 맞춤 사양을 제공합니다."],
     "Ultra-dry anhydrous chlorides": ["超干无水氯化物", "초건조 무수 염화물"],
     "High-purity inputs for CVD/ALD precursor synthesis, thin films, crystals and research, with adaptable purity and packaging options.": ["面向 CVD/ALD 前驱体合成、薄膜、晶体及科研应用，支持不同纯度等级与包装方式。", "CVD/ALD 전구체 합성, 박막, 결정 및 연구용 고순도 원료로 순도와 포장 옵션을 조정할 수 있습니다."],
+    "View PVD materials →": ["查看 PVD 材料 →", "PVD 소재 보기 →"],
+    "View CVD materials →": ["查看 CVD 材料 →", "CVD 소재 보기 →"],
     "Foundation capabilities": ["基础能力", "기반 역량"],
     "From purified feedstock to application-ready form": ["从高纯原料到适配应用的材料形态", "정제 원료부터 적용 가능한 소재 형태까지"],
     "Purification": ["金属提纯", "정제"],

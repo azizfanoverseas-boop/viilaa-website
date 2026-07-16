@@ -2598,8 +2598,8 @@ html[data-language="zh"] #portfolio-title { white-space:pre; }
 .company-position-copy p+p { margin-top:22px; }
 .company-core { background:#122823; color:#eaf0ed; padding-block:110px; }
 .company-core-inner { display:grid; grid-template-columns:.82fr 1.18fr; gap:8vw; }
-.company-core-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-.company-core-grid article { min-height:390px; padding:32px; display:flex; flex-direction:column; border:1px solid rgba(255,255,255,.15); background:linear-gradient(150deg,rgba(255,255,255,.08),rgba(255,255,255,.015)); }
+.company-core-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.company-core-grid article { min-width:0; min-height:390px; padding:32px; display:flex; flex-direction:column; border:1px solid rgba(255,255,255,.15); background:linear-gradient(150deg,rgba(255,255,255,.08),rgba(255,255,255,.015)); }
 .company-card-index { color:#c8a96b; font-size:.78rem; letter-spacing:.13em; }
 .company-core-grid h3 { margin:58px 0 18px; font-size:1.7rem; }
 html[data-language="zh"] .company-core-grid article:nth-child(2) h3 { white-space:nowrap; }
