@@ -24,6 +24,7 @@
     "Talk to our team →": ["联系我们 →", "문의하기 →"],
     "Established": ["成立时间", "설립"],
     "Core portfolio": ["核心产品", "핵심 포트폴리오"],
+    "Targets · Metal Compounds · High-Purity Metals · Functional Powders": ["靶材 · 金属化合物 · 高纯金属 · 功能粉末", "타깃재 · 금속 화합물 · 고순도 금속 · 기능성 분말"],
     "Location": ["所在地", "소재지"],
     "Ganzhou, Jiangxi": ["江西赣州", "장시성 간저우"],
     "Who we are": ["公司定位", "회사 소개"],
