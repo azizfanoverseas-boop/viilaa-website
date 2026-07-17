@@ -12,7 +12,7 @@
     "Home": ["首页", "홈"],
     "Products": ["产品", "제품"],
     "About Us": ["关于我们", "회사 소개"],
-    "Markets": ["应用市场", "시장"],
+    "Markets": ["新闻与动态", "뉴스 및 소식"],
     "Contact": ["联系我们", "문의"],
     "Our Business · 我们的事业": ["我们的事业", "사업 소개"],
     "Technology & Quality": ["技术与质量", "기술 및 품질"],
@@ -427,7 +427,8 @@
   function translatedText(source, language) {
     if (language === "en") {
       const englishOverrides = {
-        "Our Business · 我们的事业": "Our Business"
+        "Our Business · 我们的事业": "Our Business",
+        "Markets": "News & Updates"
       };
       return englishOverrides[normalize(source)] || source;
     }
