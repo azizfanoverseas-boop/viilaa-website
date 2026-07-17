@@ -84,6 +84,17 @@
     "Lead-antimony separation equipment for high-purity tin": ["高纯锡铅锑分离设备", "고순도 주석용 납·안티몬 분리 장비"],
     "Rare-earth processing": ["稀土加工", "희토류 가공"],
     "Rare-earth refining crusher": ["稀土精炼破碎机", "희토류 정련 분쇄기"],
+    "Target sandblasting device": ["靶材喷砂装置", "타깃재 샌드블라스팅 장치"],
+    "Large target machining device": ["大型靶材加工装置", "대형 타깃재 가공 장치"],
+    "Adjustable wire-processing equipment": ["可调式线材加工设备", "조절식 선재 가공 장비"],
+    "Rare-earth permanent-magnet diffusion device": ["稀土永磁扩散装置", "희토류 영구자석 확산 장치"],
+    "Wire processing": ["线材加工", "선재 가공"],
+    "Solder processing": ["焊料加工", "솔더 가공"],
+    "Alloy processing": ["合金加工", "합금 가공"],
+    "Solder engineering": ["焊料工程", "솔더 엔지니어링"],
+    "Materials handling": ["材料储运", "소재 취급"],
+    "Testing": ["检测", "시험"],
+    "Optical-fiber processing": ["光纤加工", "광섬유 가공"],
     "03 · Adjustable rare-earth extraction device": ["03 · 可调式稀土萃取装置", "03 · 조절식 희토류 추출 장치"],
     "04 · Rapid cooling device for solder bar forming": ["04 · 焊料条成型快速冷却装置", "04 · 솔더 바 성형용 급속 냉각 장치"],
     "05 · Extrusion die for shaped tin alloy": ["05 · 异形锡合金挤压模具", "05 · 이형 주석 합금 압출 금형"],
@@ -438,7 +449,7 @@
       if (value) element.textContent = value;
     });
 
-    document.querySelectorAll(".credential-card span, .patent-theme-grid span, .patent-index summary").forEach((element) => {
+    document.querySelectorAll(".credential-card span, .patent-card span, .patent-index summary").forEach((element) => {
       Array.from(element.childNodes).forEach((node) => {
         if (node.nodeType !== Node.TEXT_NODE) return;
         const source = normalize(node.textContent);
