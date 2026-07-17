@@ -68,6 +68,45 @@
     "Innovation across purification, targets, powders and processing": ["创新覆盖提纯、靶材、粉体与加工", "정제, 타깃, 분말 및 가공 전반의 혁신"],
     "27 patent documents are organized by technical theme. Nine representative covers provide a quick visual overview.": ["27 项专利按技术主题整理，并精选代表性首页便于快速浏览。", "27건의 특허 문서를 기술 주제별로 정리하고 대표 표지를 선별해 빠르게 살펴볼 수 있습니다."],
     "Browse all 27 patent documents": ["浏览全部 27 项专利文件", "전체 27건의 특허 문서 보기"],
+    "Metal purification": ["金属提纯", "금속 정제"],
+    "Metal distillation purification device": ["金属蒸馏提纯装置", "금속 증류 정제 장치"],
+    "Target engineering": ["靶材工程", "타깃재 엔지니어링"],
+    "Sputtering target welding fixture": ["溅射靶材焊接夹具", "스퍼터링 타깃재 용접 지그"],
+    "Powder processing": ["粉末加工", "분말 가공"],
+    "Continuous hot-press forming process": ["连续热压成型工艺", "연속 열간 프레스 성형 공정"],
+    "Rare-earth applications": ["稀土应用", "희토류 응용"],
+    "Grain-boundary diffusion tooling": ["晶界扩散工装", "입계 확산 치구"],
+    "Extraction": ["萃取", "추출"],
+    "Adjustable rare-earth extraction device": ["可调式稀土萃取装置", "조절식 희토류 추출 장치"],
+    "High-purity metals": ["高纯金属", "고순도 금속"],
+    "High-purity holmium preparation device": ["高纯钬制备装置", "고순도 홀뮴 제조 장치"],
+    "03 · Adjustable rare-earth extraction device": ["03 · 可调式稀土萃取装置", "03 · 조절식 희토류 추출 장치"],
+    "04 · Rapid cooling device for solder bar forming": ["04 · 焊料条成型快速冷却装置", "04 · 솔더 바 성형용 급속 냉각 장치"],
+    "05 · Extrusion die for shaped tin alloy": ["05 · 异形锡合金挤压模具", "05 · 이형 주석 합금 압출 금형"],
+    "06 · Adjustable wire-processing equipment": ["06 · 可调式线材加工设备", "06 · 조절식 선재 가공 장비"],
+    "07 · Lead-antimony separation equipment for high-purity tin": ["07 · 高纯锡铅锑分离设备", "07 · 고순도 주석용 납·안티몬 분리 장비"],
+    "08 · Terbium hydrogenation device": ["08 · 铽氢化装置", "08 · 터븀 수소화 장치"],
+    "09 · Anti-spatter soldering device": ["09 · 防飞溅焊接装置", "09 · 비산 방지 납땜 장치"],
+    "10 · Tungsten-wire processing equipment": ["10 · 钨丝加工设备", "10 · 텅스텐 와이어 가공 장비"],
+    "11 · Solder terminal correction device": ["11 · 焊料端头校正装置", "11 · 솔더 단자 교정 장치"],
+    "12 · High-purity scandium melting furnace": ["12 · 高纯钪熔炼炉", "12 · 고순도 스칸듐 용해로"],
+    "13 · Tinned copper wire cooling and drying device": ["13 · 镀锡铜线冷却干燥装置", "13 · 주석 도금 동선 냉각·건조 장치"],
+    "14 · NdFeB grain-boundary diffusion tooling": ["14 · 钕铁硼晶界扩散工装", "14 · NdFeB 입계 확산 치구"],
+    "15 · Dysprosium hydrogenation device": ["15 · 镝氢化装置", "15 · 디스프로슘 수소화 장치"],
+    "16 · Rare-earth permanent-magnet diffusion device": ["16 · 稀土永磁扩散装置", "16 · 희토류 영구자석 확산 장치"],
+    "17 · Metal distillation purification device": ["17 · 金属蒸馏提纯装置", "17 · 금속 증류 정제 장치"],
+    "18 · Rare-metal and alloy storage device": ["18 · 稀有金属及合金储存装置", "18 · 희유금속 및 합금 보관 장치"],
+    "19 · Sputtering target welding fixture": ["19 · 溅射靶材焊接夹具", "19 · 스퍼터링 타깃재 용접 지그"],
+    "20 · High-purity holmium preparation device": ["20 · 高纯钬制备装置", "20 · 고순도 홀뮴 제조 장치"],
+    "21 · Large target machining device": ["21 · 大型靶材加工装置", "21 · 대형 타깃재 가공 장치"],
+    "22 · Target sandblasting device": ["22 · 靶材喷砂装置", "22 · 타깃재 샌드블라스팅 장치"],
+    "23 · Protected tin-ball welding device": ["23 · 防护式锡球焊接装置", "23 · 보호형 주석 볼 용접 장치"],
+    "24 · Solder-ball strength testing device": ["24 · 焊料球强度检测装置", "24 · 솔더 볼 강도 시험 장치"],
+    "25 · Tin-alloy cutting device with grinding": ["25 · 带研磨功能的锡合金切割装置", "25 · 연마 기능이 있는 주석 합금 절단 장치"],
+    "26 · Optical-fiber preform fracture detection equipment": ["26 · 光纤预制棒断裂检测设备", "26 · 광섬유 프리폼 파손 검사 장비"],
+    "27 · Rare-earth refining crusher": ["27 · 稀土精炼破碎机", "27 · 희토류 정련 분쇄기"],
+    "28 · Rare-earth powder continuous hot-press process": ["28 · 稀土粉末连续热压工艺", "28 · 희토류 분말 연속 열간 프레스 공정"],
+    "29 · Rare-earth extraction equipment with microencapsulation support": ["29 · 带微胶囊辅助的稀土萃取设备", "29 · 마이크로캡슐 보조 희토류 추출 장비"],
     "Materials expertise, aligned with your next application.": ["以材料专长，协同您的下一项应用。", "소재 전문성으로 다음 응용을 함께합니다."],
     "Start a conversation": ["开始沟通", "문의 시작"],
     "High-Purity Metals": ["高纯金属", "고순도 금속"],
@@ -386,13 +425,23 @@
   }
 
   function translateExactText(language) {
-    const selector = "h1,h2,h3,p,li,a,button,span,strong,dt,dd,th,td,label";
+    const selector = "h1,h2,h3,p,li,a,button,span,strong,b,dt,dd,th,td,label";
     document.querySelectorAll(selector).forEach((element) => {
       if (element.closest(".language-switcher")) return;
       if (element.children.length) return;
       const source = normalize(element.textContent);
       const value = translatedText(source, language);
       if (value) element.textContent = value;
+    });
+
+    document.querySelectorAll(".credential-card span, .patent-theme-grid span, .patent-index summary").forEach((element) => {
+      Array.from(element.childNodes).forEach((node) => {
+        if (node.nodeType !== Node.TEXT_NODE) return;
+        const source = normalize(node.textContent);
+        if (!source) return;
+        const value = translatedText(source, language);
+        if (value) node.textContent = value;
+      });
     });
 
     document.querySelectorAll("input[placeholder], textarea[placeholder]").forEach((field) => {
