@@ -459,6 +459,12 @@
       });
     });
 
+    document.querySelectorAll(".patent-index-grid .patent-card span").forEach((element) => {
+      Array.from(element.childNodes).forEach((node) => {
+        if (node.nodeType === Node.TEXT_NODE) node.textContent = node.textContent.replace(/^\s*\d+\s*·\s*/, "");
+      });
+    });
+
     document.querySelectorAll("input[placeholder], textarea[placeholder]").forEach((field) => {
       const value = translatedText(field.getAttribute("placeholder"), language);
       if (value) field.setAttribute("placeholder", value);
