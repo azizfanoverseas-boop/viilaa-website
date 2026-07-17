@@ -239,7 +239,7 @@ a {
 
 .language-switcher-toggle {
   display: inline-flex;
-  min-width: 72px;
+  min-width: 112px;
   height: 38px;
   padding: 0 12px;
   align-items: center;
@@ -260,9 +260,19 @@ a {
   font-weight: 500;
 }
 
+.language-switcher-toggle svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .language-switcher-toggle strong {
-  min-width: 20px;
-  font-size: 12px;
+  min-width: 0;
+  font-size: 13px;
   letter-spacing: 0;
 }
 
@@ -2375,7 +2385,7 @@ h3 {
   }
 
   .language-switcher-toggle {
-    min-width: 60px;
+    min-width: 88px;
     height: 34px;
     padding: 0 9px;
     gap: 5px;

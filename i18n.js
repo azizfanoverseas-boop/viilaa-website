@@ -779,7 +779,7 @@
     button.setAttribute("aria-expanded", "false");
     button.setAttribute("aria-controls", panelId);
     button.setAttribute("aria-label", language === "zh" ? "切换语言" : language === "ko" ? "언어 변경" : "Change language");
-    button.innerHTML = `<span aria-hidden="true">◎</span><strong>${languageMeta[language].short}</strong><i aria-hidden="true"></i>`;
+    button.innerHTML = `<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.4 2.5 3.6 5.5 3.6 9S14.4 18.5 12 21M12 3c-2.4 2.5-3.6 5.5-3.6 9s1.2 6.5 3.6 9"></path></svg><strong>${languageMeta[language].label}</strong><i aria-hidden="true"></i>`;
 
     panel.className = "language-switcher-panel";
     panel.id = panelId;
