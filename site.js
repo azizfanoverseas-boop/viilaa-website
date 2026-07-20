@@ -170,7 +170,7 @@
 
       [
         ["Discover Viilaa", companyProfileUrl],
-        ["Our Business · 我们的事业", ourBusinessUrl],
+        ["Our Business", ourBusinessUrl],
         ["Technology & Quality", technologyUrl],
       ].forEach(([label, href]) => {
         const link = document.createElement("a");
@@ -193,7 +193,7 @@
     if (document.querySelector('script[data-viilaa-i18n]')) return;
 
     const script = document.createElement("script");
-    script.src = new URL("i18n.js", siteScriptSrc).href;
+    script.src = new URL("i18n.js?v=20260720b", siteScriptSrc).href;
     script.dataset.viilaaI18n = "true";
     document.head.append(script);
   }

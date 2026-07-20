@@ -142,6 +142,12 @@
   if (providers[saved]) {
     render(saved, "manual");
   } else {
-    detectProvider().then((provider) => render(provider, "auto"));
+    const immediateProvider = fallbackProvider();
+    render(immediateProvider, "auto");
+    detectProvider().then((provider) => {
+      if (!window.localStorage.getItem(preferenceKey) && provider !== activeProvider) {
+        render(provider, "auto");
+      }
+    });
   }
 })();

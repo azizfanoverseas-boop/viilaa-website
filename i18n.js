@@ -15,6 +15,7 @@
     "Markets": ["新闻与动态", "뉴스 및 소식"],
     "Contact": ["联系我们", "문의"],
     "Our Business · 我们的事业": ["我们的事业", "사업 소개"],
+    "Our Business": ["我们的事业", "사업 소개"],
     "Technology & Quality": ["技术与质量", "기술 및 품질"],
     "Discover Viilaa": ["走进中锡", "Viilaa 알아보기"],
     "Viilaa · Advanced Materials": ["中锡金属 · 先进材料", "Viilaa · 첨단 소재"],

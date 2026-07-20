@@ -490,16 +490,16 @@ a {
 }
 
 .motion-slide-one {
-  background-image: url("assets/banner-pvd-principle.png");
+  background-image: url("assets/banner-pvd-principle.webp");
 }
 
 .motion-slide-two {
-  background-image: url("assets/banner-cvd-principle.png");
+  background-image: url("assets/banner-cvd-principle.webp");
   animation-delay: 6s;
 }
 
 .motion-slide-three {
-  background-image: url("assets/banner-applications.png");
+  background-image: url("assets/banner-applications.webp");
   animation-delay: 12s;
 }
 
@@ -1669,7 +1669,7 @@ h3 {
   color: #fff;
   background:
     linear-gradient(90deg, rgba(8, 14, 18, 0.96), rgba(12, 28, 34, 0.78)),
-    url("assets/hero.png") center / cover;
+    url("assets/hero.webp") center / cover;
 }
 
 .page-hero h1,
@@ -2756,7 +2756,7 @@ html[data-language="zh"] .company-closing h2 { max-width:none; white-space:nowra
   color: #edfaff;
   background:
     linear-gradient(90deg, rgba(3, 14, 24, 0.98) 0%, rgba(3, 18, 30, 0.88) 50%, rgba(3, 18, 30, 0.46) 100%),
-    url("assets/banner-umicore-process.png") center / cover;
+    url("assets/banner-umicore-process.webp") center / cover;
 }
 
 .technology-hero::after {
@@ -2930,7 +2930,7 @@ html[data-language="zh"] .company-closing h2 { max-width:none; white-space:nowra
   color: #eaf8fc;
   background:
     linear-gradient(120deg, rgba(3, 16, 27, 0.98), rgba(7, 40, 50, 0.92)),
-    url("assets/banner-science-pvd.png") center / cover;
+    url("assets/banner-science-pvd.webp") center / cover;
 }
 
 .technology-value > div {
@@ -3143,7 +3143,7 @@ html[data-language="zh"] .company-closing h2 { max-width:none; white-space:nowra
   color: #e7f7ff;
   background:
     linear-gradient(90deg, rgba(5, 20, 35, 0.98) 0%, rgba(5, 20, 35, 0.86) 52%, rgba(5, 20, 35, 0.48) 100%),
-    url("assets/hero.png") center / cover;
+    url("assets/hero.webp") center / cover;
 }
 
 .business-hero::after {
