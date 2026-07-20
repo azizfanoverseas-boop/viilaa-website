@@ -894,23 +894,26 @@
       switcher.classList.toggle("is-open", open);
       button.setAttribute("aria-expanded", String(open));
     };
-    switcher.addEventListener("pointerenter", () => {
+    const hoverCapable = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    if (hoverCapable) {
+      switcher.addEventListener("pointerenter", () => {
+        window.clearTimeout(closeTimer);
+        closeTimer = 0;
+        setOpen(true);
+      });
+      switcher.addEventListener("pointerleave", () => {
+        setOpen(true);
+        closeTimer = window.setTimeout(() => {
+          setOpen(false);
+          closeTimer = 0;
+        }, 220);
+      });
+    }
+    button.addEventListener("click", () => {
       window.clearTimeout(closeTimer);
       closeTimer = 0;
-      setOpen(true);
+      setOpen(!switcher.classList.contains("is-open"));
     });
-    switcher.addEventListener("pointerleave", () => {
-      setOpen(true);
-      closeTimer = window.setTimeout(() => {
-        setOpen(false);
-        closeTimer = 0;
-      }, 220);
-    });
-    switcher.addEventListener("focusin", () => setOpen(true));
-    switcher.addEventListener("focusout", () => window.setTimeout(() => {
-      if (!switcher.contains(document.activeElement)) setOpen(false);
-    }, 0));
-    button.addEventListener("click", () => setOpen(!switcher.classList.contains("is-open")));
     document.addEventListener("click", (event) => {
       if (!switcher.contains(event.target)) setOpen(false);
     });

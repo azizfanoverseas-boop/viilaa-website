@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const siteScriptSrc = document.currentScript ? document.currentScript.src : document.baseURI;
 
   function bindDropdownBehavior(menu, toggle) {
@@ -40,23 +40,17 @@
       }, closeDelay);
     };
 
-    menu.addEventListener("pointerenter", () => {
-      cancelClose();
-      setOpen(true);
-    });
-    menu.addEventListener("pointerleave", () => {
-      setOpen(true);
-      scheduleClose();
-    });
-    menu.addEventListener("focusin", () => {
-      cancelClose();
-      setOpen(true);
-    });
-    menu.addEventListener("focusout", () => {
-      window.setTimeout(() => {
-        if (!menu.contains(document.activeElement)) scheduleClose();
-      }, 0);
-    });
+    const hoverCapable = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    if (hoverCapable) {
+      menu.addEventListener("pointerenter", () => {
+        cancelClose();
+        setOpen(true);
+      });
+      menu.addEventListener("pointerleave", () => {
+        setOpen(true);
+        scheduleClose();
+      });
+    }
     menu.addEventListener("keydown", (event) => {
       if (event.key !== "Escape") return;
       cancelClose();
@@ -193,7 +187,7 @@
     if (document.querySelector('script[data-viilaa-i18n]')) return;
 
     const script = document.createElement("script");
-    script.src = new URL("i18n.js?v=20260720b", siteScriptSrc).href;
+    script.src = new URL("i18n.js?v=20260720c", siteScriptSrc).href;
     script.dataset.viilaaI18n = "true";
     document.head.append(script);
   }
