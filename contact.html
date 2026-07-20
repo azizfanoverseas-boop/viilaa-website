@@ -125,17 +125,17 @@
           <h2 id="map-title">Longhua Industrial Park, Ganzhou</h2>
           <p>
             Jiangxi Viilaa Metal Materials Co., Ltd is located in Nankang District,
-            Ganzhou, Jiangxi. Use Google Maps for route planning and location reference.
+            Ganzhou, Jiangxi. Choose Baidu Maps or Google Maps for route planning and location reference.
           </p>
-          <a class="button primary" href="https://maps.app.goo.gl/fskQtcS2LQGVzq196" target="_blank" rel="noopener">Open Google Maps</a>
+          <div class="map-provider-switch" role="group" aria-label="Choose map">
+            <button class="map-provider-button" type="button" data-map-provider="baidu">Baidu Maps</button>
+            <button class="map-provider-button" type="button" data-map-provider="google">Google Maps</button>
+          </div>
+          <p class="map-provider-note" data-map-status aria-live="polite">Selecting the best map for your region…</p>
+          <a class="button primary" data-map-open href="https://maps.app.goo.gl/fskQtcS2LQGVzq196" target="_blank" rel="noopener">Open Google Maps</a>
         </div>
-        <div class="map-frame">
-          <iframe
-            title="Jiangxi Viilaa Metal Materials location map"
-            src="https://www.google.com/maps?q=Longhua%20Industrial%20Park%2C%20Nankang%20District%2C%20Ganzhou%2C%20Jiangxi&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="map-frame" data-map-frame>
+          <div class="map-loading" data-map-loading>Loading map…</div>
         </div>
       </section>
     </main>
@@ -145,5 +145,6 @@
       <p>High-purity metals, PVD materials, CVD precursors, and custom advanced materials.</p>
     </footer>
     <script src="site.js"></script>
+    <script src="map-switcher.js"></script>
   </body>
 </html>
