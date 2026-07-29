@@ -9,6 +9,8 @@
       content="Supplier of high-purity rare earth metals, PVD sputtering targets, evaporation materials, CVD precursor chlorides, and high-performance powders."
     />
     <link rel="stylesheet" href="styles.css?v=20260720c" />
+    <link rel="stylesheet" href="concept-d.css?v=7" />
+    <link rel="stylesheet" href="periodic-explorer.css?v=2" />
   </head>
   <body>
     <header class="site-header">
@@ -119,92 +121,155 @@
         </div>
       </section>
 
-      <section class="section product-lines capability-sections" aria-label="Company capabilities">
-        <div id="application-markets" class="line-section">
-          <div class="line-visual image-mosaic" aria-label="Application market image gallery">
-            <img class="mosaic-large" src="assets/banner-science-ai.webp" alt="AI hardware and precision electronics application scene" loading="lazy" />
-            <img src="assets/banner-umicore-applications.webp" alt="New energy battery and advanced materials application scene" loading="lazy" />
-            <img src="assets/banner-science-aerospace-ev.webp" alt="Aerospace coating and mobility materials application scene" loading="lazy" />
-            <img src="assets/banner-science-pvd.webp" alt="Robotics, wafer inspection, and precision coating application scene" loading="lazy" />
-          </div>
-          <div class="line-copy">
-            <p class="eyebrow">01 / Application Markets</p>
-            <h2>Materials enabling advanced industries</h2>
-            <p>
-              Our high-purity metals and thin-film materials support customers across semiconductor,
-              clean energy, aerospace, optical coating, and intelligent manufacturing workflows.
-            </p>
-            <ul class="feature-list">
-              <li>Semiconductor, AI hardware, and advanced device research</li>
-              <li>New energy, mobility, aerospace, and optical coating programs</li>
-              <li>Robotics, precision inspection, and automated coating platforms</li>
-            </ul>
+      <section class="material-workbench" aria-labelledby="workbench-title">
+        <div class="workbench-intro">
+          <div>
+            <p class="eyebrow">MATERIAL WORKBENCH</p>
+            <h2 id="workbench-title">一项材料需求，需要被逐步定义。</h2>
           </div>
         </div>
 
-        <div id="technology-advantages" class="line-section line-section-reverse">
-          <div class="line-visual">
-            <img src="assets/banner-umicore-process.webp" alt="Vacuum coating equipment and high-purity material workflow" loading="lazy" />
-          </div>
-          <div class="line-copy">
-            <p class="eyebrow">02 / Technology & Production</p>
-            <h2>Process capability supported by advanced equipment</h2>
-            <p>
-              From melting and forming to machining, cleaning, and packaging, our workflow is designed
-              for purity control, dimensional consistency, and stable batch-to-batch delivery.
-            </p>
-            <ul class="feature-list">
-              <li>Controlled production environments for high-purity samples</li>
-              <li>Custom circular, rectangular, block, granule, pellet, rod, and wire formats</li>
-              <li>Vacuum sealing, argon protection, and moisture-controlled handling</li>
-            </ul>
-          </div>
-        </div>
+        <div class="workbench-shell">
+          <nav class="workbench-nav" aria-label="材料项目阶段">
+            <button class="workbench-tab is-active" type="button" data-panel="route">
+              <span>01</span><strong>选择材料路径</strong><small>从工艺出发</small>
+            </button>
+            <button class="workbench-tab" type="button" data-panel="spec">
+              <span>02</span><strong>构建交付规格</strong><small>从元素到形态</small>
+            </button>
+            <button class="workbench-tab" type="button" data-panel="verify">
+              <span>03</span><strong>确定验证项目</strong><small>从声明到证据</small>
+            </button>
+            <button class="workbench-tab" type="button" data-panel="supply">
+              <span>04</span><strong>衔接后续供货</strong><small>从样品到复购</small>
+            </button>
+          </nav>
 
-        <div id="testing-capability" class="line-section">
-          <div class="line-visual">
-            <img src="assets/capability-testing-lab.webp" alt="Analytical instruments for high-purity material testing" loading="lazy" />
-          </div>
-          <div class="line-copy">
-            <p class="eyebrow">03 / Testing Capability</p>
-            <h2>Analytical control for purity, structure, and consistency</h2>
-            <p>
-              Quality work is built around traceable inspection, composition analysis, particle and
-              surface review, and documentation support for customer qualification workflows.
-            </p>
-            <ul class="feature-list">
-              <li>Elemental composition checks and impurity review</li>
-              <li>Morphology, particle, and surface condition support</li>
-              <li>Packaging verification for sensitive rare earth compounds</li>
-            </ul>
-          </div>
-        </div>
+          <div class="workbench-stage">
+            <section class="workbench-panel is-active" data-workbench-panel="route">
+              <div class="panel-heading">
+                <p>EXPLORE BY ELEMENT</p>
+                <h3>按元素探索 Viilaa 材料</h3>
+              </div>
+              <div class="periodic-explorer">
+                <div class="periodic-main">
+                  <div class="periodic-legend">
+                    <span><i class="available"></i>Viilaa 现有相关产品</span>
+                    <span><i></i>暂未收录</span>
+                    <span class="legend-note">点击高亮元素查看产品</span>
+                  </div>
+                  <div id="periodic-table" class="periodic-table" aria-label="Viilaa 产品元素周期表"></div>
+                  <div class="periodic-series">
+                    <span>镧系</span>
+                    <div id="lanthanide-row" class="series-row"></div>
+                  </div>
+                  <div class="periodic-series muted-series">
+                    <span>锕系</span>
+                    <div id="actinide-row" class="series-row"></div>
+                  </div>
+                </div>
+                <aside id="element-products" class="element-products" aria-live="polite">
+                  <div class="element-hero">
+                    <span id="element-number">70</span>
+                    <strong id="element-symbol">Yb</strong>
+                    <small id="element-name">镱 · Ytterbium</small>
+                  </div>
+                  <div class="element-summary">
+                    <p>VIILAA PRODUCT COVERAGE</p>
+                    <h4 id="element-title">镱相关产品</h4>
+                    <div id="element-tags" class="element-tags"></div>
+                    <ul id="element-product-list" class="element-product-list"></ul>
+                  </div>
+                </aside>
+              </div>
+              <p class="panel-note">现有网站共识别出 26 个相关元素；产品数量与关联关系依据当前产品目录整理。</p>
+            </section>
 
-        <div id="core-competency" class="line-section line-section-reverse">
-          <div class="line-visual">
-            <img src="assets/banner-umicore-global.webp" alt="Global advanced materials supply perspective" loading="lazy" />
-          </div>
-          <div class="line-copy">
-            <p class="eyebrow">04 / Core Competency</p>
-            <h2>Reliable material supply from R&D samples to production</h2>
-            <p>
-              Broad material selection, custom specifications, inspection documentation, and
-              responsive support help customers move from laboratory evaluation to recurring supply.
-            </p>
-            <div class="metric-strip">
-              <div>
-                <strong>75</strong>
-                <span>listed product groups</span>
+            <section class="workbench-panel" data-workbench-panel="spec" hidden>
+              <div class="panel-heading">
+                <p>BUILD THE SPECIFICATION</p>
+                <h3>同一种元素，可以是不同交付物。</h3>
               </div>
-              <div>
-                <strong>Custom</strong>
-                <span>purity, form, size, and packaging</span>
+              <div class="spec-builder">
+                <div class="element-card">
+                  <span>70</span><strong>Yb</strong><small>Ytterbium</small>
+                  <i>示例材料</i>
+                </div>
+                <div class="spec-arrow">→</div>
+                <div class="form-gallery">
+                  <figure><img src="assets/product-images/ytterbium-metal-target.webp" alt="镱金属靶材" /><figcaption>靶材<small>Target</small></figcaption></figure>
+                  <figure><img src="assets/product-images/ytterbium-metal-block.webp" alt="镱金属块" /><figcaption>块状<small>Block</small></figcaption></figure>
+                  <figure><img src="assets/product-images/ytterbium-metal-granule.webp" alt="镱金属颗粒" /><figcaption>颗粒<small>Granule</small></figcaption></figure>
+                </div>
               </div>
-              <div>
-                <strong>COA</strong>
-                <span>documentation and inspection support</span>
+              <div class="spec-rail">
+                <div><span>01</span><b>Composition</b><small>元素 / 合金比例</small></div>
+                <div><span>02</span><b>Purity</b><small>纯度 / 关键杂质</small></div>
+                <div><span>03</span><b>Geometry</b><small>形态 / 尺寸 / 公差</small></div>
+                <div><span>04</span><b>Handling</b><small>数量 / 包装 / 储存</small></div>
               </div>
-            </div>
+            </section>
+
+            <section class="workbench-panel" data-workbench-panel="verify" hidden>
+              <div class="panel-heading">
+                <p>DEFINE THE EVIDENCE</p>
+                <h3>检测不是设备清单，而是采购判断依据。</h3>
+              </div>
+              <div class="evidence-console">
+                <div class="console-image">
+                  <img src="assets/technology/quality-equipment/icp-oes.webp" alt="ICP-OES 元素分析设备" />
+                  <span>ICP</span>
+                </div>
+                <div class="console-data">
+                  <figure>
+                    <img src="assets/technology/quality-equipment/sem.jpg" alt="扫描电子显微镜设备" />
+                    <figcaption><span>SEM</span><small>扫描电子显微镜</small></figcaption>
+                  </figure>
+                  <figure>
+                    <img src="assets/technology/quality-equipment/x-ray-diffractometer.webp" alt="X 射线衍射仪" />
+                    <figcaption><span>XRD</span><small>X 射线衍射仪</small></figcaption>
+                  </figure>
+                  <figure>
+                    <img src="assets/technology/quality-equipment/oxygen-nitrogen-hydrogen-analyzer.jpg" alt="氧氮氢分析设备" />
+                    <figcaption><span>O / N / H</span><small>氧氮氢分析设备</small></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="verification-scope">
+                <div class="verification-scope-main">
+                  <span>AVAILABLE TESTING / 常规检测支持</span>
+                  <ul>
+                    <li>ICP-OES</li>
+                    <li>ICP-MS</li>
+                    <li>C-Scan</li>
+                    <li>SEM</li>
+                    <li>氧氮氢气体检测</li>
+                    <li>光学显微镜</li>
+                    <li>物相 XRD</li>
+                    <li>水含量分析</li>
+                    <li>pH 分析</li>
+                  </ul>
+                </div>
+                <div class="verification-scope-external">
+                  <span>EXTERNAL LAB / 外部专项检测</span>
+                  <strong>GDMS</strong>
+                  <small>由合作实验室完成送检</small>
+                </div>
+              </div>
+            </section>
+
+            <section class="workbench-panel" data-workbench-panel="supply" hidden>
+              <div class="panel-heading">
+                <p>CREATE A REPEATABLE PATH</p>
+                <h3 class="allow-wrap">不是一句“从研发到量产”，<br>而是四次明确确认。</h3>
+              </div>
+              <div class="supply-map">
+                <div><span>01</span><strong>需求简报</strong><p>材料、纯度、形态、数量与应用。</p></div>
+                <div><span>02</span><strong>规格确认</strong><p>尺寸、公差、检测和包装要求。</p></div>
+                <div><span>03</span><strong>样品验证</strong><p>依据约定项目评估首批材料。</p></div>
+                <div><span>04</span><strong>规格留档</strong><p>保留后续批次采购的确认基础。</p></div>
+              </div>
+            </section>
           </div>
         </div>
       </section>
@@ -216,20 +281,36 @@
         </div>
         <div class="application-grid">
           <article>
-            <h3>Semiconductor & Microelectronics</h3>
-            <p>High-k dielectrics, diffusion barriers, ohmic contact layers, MRAM films, and advanced device research.</p>
+            <img src="assets/applications-generated/downstream-semiconductor-computing-v2.png" alt="先进芯片封装与高性能计算硬件应用场景" />
+            <div class="application-copy">
+              <span>01 / SEMICONDUCTOR</span>
+              <h3>Semiconductor & Microelectronics</h3>
+              <p>Advanced chip packages, AI accelerators, high-performance computing, and data-center hardware.</p>
+            </div>
           </article>
           <article>
-            <h3>Display & Flexible Electronics</h3>
-            <p>OLED interfaces, IGZO backplane doping, metal wiring, reflective electrodes, and barrier films.</p>
+            <img src="assets/applications-generated/downstream-display-mobile-oled-v3.png" alt="手机 OLED 屏幕与大型 OLED 显示终端应用场景" />
+            <div class="application-copy">
+              <span>02 / DISPLAY</span>
+              <h3>Display & Flexible Electronics</h3>
+              <p>Smartphone OLED screens, large-format OLED displays, and next-generation professional display terminals.</p>
+            </div>
           </article>
           <article>
-            <h3>Optical Coating & Photonics</h3>
-            <p>Laser gain films, infrared optics, optical protection coatings, and rare earth functional films.</p>
+            <img src="assets/applications-generated/photonics-fiber-coated-glass-crystals-v3.png" alt="掺杂光纤、镀膜玻璃与功能晶体材料场景" />
+            <div class="application-copy">
+              <span>03 / PHOTONICS</span>
+              <h3>Optical Coating & Photonics</h3>
+              <p>Doped optical fibers, coated optical glass, Faraday rotator crystals, YAG, and scintillation crystals.</p>
+            </div>
           </article>
           <article>
-            <h3>Magnetic & Energy Materials</h3>
-            <p>Permanent magnets, magnetostrictive materials, magnetic refrigeration, fuel cells, and thermal barrier coatings.</p>
+            <img src="assets/applications-generated/downstream-magnetic-motor-v2.png" alt="永磁电机与高效电驱系统应用场景" />
+            <div class="application-copy">
+              <span>04 / ENERGY</span>
+              <h3>Magnetic & Energy Materials</h3>
+              <p>Permanent-magnet traction motors, industrial drives, and high-efficiency generation systems.</p>
+            </div>
           </article>
         </div>
       </section>
@@ -288,6 +369,7 @@
       <p>High-purity metals, PVD materials, CVD precursors, and custom advanced materials.</p>
     </footer>
     <script defer src="site.js?v=20260720c"></script>
-    <script defer src="i18n.js?v=20260720c" data-viilaa-i18n="true"></script>
+    <script defer src="i18n.js?v=20260728f" data-viilaa-i18n="true"></script>
+    <script defer src="concept-d.js?v=2"></script>
   </body>
 </html>
