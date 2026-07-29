@@ -220,11 +220,11 @@
   border-top: 1px solid var(--wb-line);
   border-bottom: 1px solid var(--wb-line);
 }
-.spec-rail div { padding: 18px 16px; }
+.spec-rail div { padding: 21px 18px; }
 .spec-rail div + div { border-left: 1px solid var(--wb-line); }
-.spec-rail span { color: var(--wb-aqua); font-size: 9px; }
-.spec-rail b { display: block; margin: 8px 0 4px; font-size: 13px; }
-.spec-rail small { color: #819291; font-size: 9px; }
+.spec-rail span { color: var(--wb-aqua); font-size: 11px; }
+.spec-rail b { display: block; margin: 9px 0 6px; font-size: 18px; }
+.spec-rail small { color: #819291; font-size: 12px; }
 .evidence-console {
   display: grid;
   grid-template-columns: 1.05fr .95fr;
