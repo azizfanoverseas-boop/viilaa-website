@@ -514,6 +514,11 @@
   font-size: clamp(22px, 1.6vw, 30px);
   line-height: 1.15;
 }
+html[data-language="ko"] .application-copy h3 {
+  font-size: clamp(18px, 1.32vw, 27px);
+  letter-spacing: -.035em;
+  white-space: nowrap;
+}
 .applications .application-grid .application-copy p {
   max-width: 34ch;
   margin: 0;
@@ -556,4 +561,8 @@
 @media (max-width: 620px) {
   .applications .application-grid { grid-template-columns: 1fr; }
   .applications .application-grid article { min-height: 72vh; }
+  html[data-language="ko"] .application-copy h3 {
+    min-height: 2.3em;
+    white-space: normal;
+  }
 }
