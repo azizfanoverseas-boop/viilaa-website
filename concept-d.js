@@ -10,32 +10,32 @@
   ];
 
   const active = {
-    Sc:{cn:"钪",en:"Scandium",tags:["METAL","PVD","CVD"],products:["高纯钪金属","钪金属靶材","超干无水氯化钪","铝钪合金靶材","铝钪锗钽合金靶材"]},
-    Y:{cn:"钇",en:"Yttrium",tags:["METAL","PVD","CVD","POWDER"],products:["高纯钇金属","钇金属靶材","钇金属颗粒","超干无水氯化钇","铝钇合金靶材","球形氧化钇粉末","钇铝石榴石粉末"]},
-    La:{cn:"镧",en:"Lanthanum",tags:["METAL","PVD","CVD"],products:["高纯镧金属","镧金属靶材","超干无水氯化镧"]},
-    Ce:{cn:"铈",en:"Cerium",tags:["METAL","CVD"],products:["高纯铈金属","超干无水氯化铈"]},
-    Pr:{cn:"镨",en:"Praseodymium",tags:["METAL","CVD"],products:["高纯镨金属","超干无水氯化镨"]},
-    Nd:{cn:"钕",en:"Neodymium",tags:["METAL","PVD","CVD"],products:["高纯钕金属","钕金属颗粒","超干无水氯化钕","铝钕合金靶材"]},
-    Sm:{cn:"钐",en:"Samarium",tags:["METAL","CVD"],products:["高纯钐金属","超干无水氯化钐"]},
-    Eu:{cn:"铕",en:"Europium",tags:["METAL"],products:["高纯铕金属"]},
-    Gd:{cn:"钆",en:"Gadolinium",tags:["METAL","PVD","CVD"],products:["高纯钆金属","钆金属靶材","钆金属块","钆金属颗粒","超干无水氯化钆"]},
-    Tb:{cn:"铽",en:"Terbium",tags:["METAL","PVD","CVD"],products:["高纯铽金属","铽金属靶材","铽金属块","超干无水氯化铽"]},
-    Dy:{cn:"镝",en:"Dysprosium",tags:["METAL","PVD","CVD"],products:["高纯镝金属","镝金属靶材","超干无水氯化镝"]},
-    Ho:{cn:"钬",en:"Holmium",tags:["METAL","PVD","CVD","POWDER"],products:["高纯钬金属","钬金属靶材","超干无水氯化钬","钬铜合金棒","钬铜球形粉末"]},
-    Er:{cn:"铒",en:"Erbium",tags:["METAL","PVD","CVD"],products:["高纯铒金属","铒金属靶材","铒金属颗粒","超干无水氯化铒"]},
-    Tm:{cn:"铥",en:"Thulium",tags:["METAL","CVD"],products:["高纯铥金属","超干无水氯化铥"]},
-    Yb:{cn:"镱",en:"Ytterbium",tags:["METAL","PVD","CVD"],products:["高纯镱金属","镱金属靶材","镱金属块","镱金属颗粒","超干无水氯化镱"]},
-    Lu:{cn:"镥",en:"Lutetium",tags:["METAL","PVD","CVD"],products:["高纯镥金属","镥金属靶材","超干无水氯化镥"]},
-    Al:{cn:"铝",en:"Aluminium",tags:["PVD","POWDER","ALLOY"],products:["铝金属靶材","铝金属颗粒","铝钇合金靶材","铝钪合金靶材","铝钕合金靶材","铝钪锗钽合金靶材","球形氧化铝粉末","钇铝石榴石粉末"]},
-    Ti:{cn:"钛",en:"Titanium",tags:["PVD"],products:["钛金属靶材"]},
-    V:{cn:"钒",en:"Vanadium",tags:["ALLOY","PVD"],products:["镍钒合金靶材"]},
-    Cr:{cn:"铬",en:"Chromium",tags:["PVD","ALLOY"],products:["铬金属靶材","镍铬合金靶材"]},
-    Ni:{cn:"镍",en:"Nickel",tags:["PVD","ALLOY"],products:["镍金属靶材","镍金属颗粒","镍铬合金靶材","镍钒合金靶材"]},
-    Cu:{cn:"铜",en:"Copper",tags:["PVD","ALLOY","POWDER"],products:["铜金属靶材","铜金属颗粒","钬铜合金棒","钬铜球形粉末"]},
-    Ge:{cn:"锗",en:"Germanium",tags:["ALLOY","PVD"],products:["铝钪锗钽合金靶材"]},
-    Hf:{cn:"铪",en:"Hafnium",tags:["PVD"],products:["铪金属靶材"]},
-    Ta:{cn:"钽",en:"Tantalum",tags:["PVD","ALLOY"],products:["钽金属靶材","铝钪锗钽合金靶材"]},
-    Sn:{cn:"锡",en:"Tin",tags:["METAL","PVD"],products:["高纯锡金属","锡金属颗粒"]}
+    Sc:{cn:"钪",en:"Scandium",tags:["METAL","PVD","CVD"],products:["金属钪","金属钪靶","超干无水氯化钪","铝钪合金靶","铝钪锗钽多元合金靶"]},
+    Y:{cn:"钇",en:"Yttrium",tags:["METAL","PVD","CVD","POWDER"],products:["金属钇","金属钇靶","金属钇颗粒","超干无水氯化钇","钇铝合金靶","球形氧化钇粉末","YAG粉末"]},
+    La:{cn:"镧",en:"Lanthanum",tags:["METAL","PVD","CVD"],products:["金属镧","金属镧靶","超干无水氯化镧"]},
+    Ce:{cn:"铈",en:"Cerium",tags:["METAL","CVD"],products:["金属铈","超干无水氯化铈"]},
+    Pr:{cn:"镨",en:"Praseodymium",tags:["METAL","CVD"],products:["金属镨","超干无水氯化镨"]},
+    Nd:{cn:"钕",en:"Neodymium",tags:["METAL","PVD","CVD"],products:["金属钕","金属钕颗粒","超干无水氯化钕","铝钕合金靶"]},
+    Sm:{cn:"钐",en:"Samarium",tags:["METAL","CVD"],products:["金属钐","超干无水氯化钐"]},
+    Eu:{cn:"铕",en:"Europium",tags:["METAL"],products:["金属铕"]},
+    Gd:{cn:"钆",en:"Gadolinium",tags:["METAL","PVD","CVD"],products:["金属钆","金属钆靶","金属钆方锭","金属钆颗粒","超干无水氯化钆"]},
+    Tb:{cn:"铽",en:"Terbium",tags:["METAL","PVD","CVD"],products:["金属铽","金属铽靶","金属铽方锭","超干无水氯化铽"]},
+    Dy:{cn:"镝",en:"Dysprosium",tags:["METAL","PVD","CVD"],products:["金属镝","金属镝靶","超干无水氯化镝"]},
+    Ho:{cn:"钬",en:"Holmium",tags:["METAL","PVD","CVD","POWDER"],products:["金属钬","金属钬靶","超干无水氯化钬","钬铜合金棒","钬铜合金球形粉"]},
+    Er:{cn:"铒",en:"Erbium",tags:["METAL","PVD","CVD"],products:["金属铒","金属铒靶","金属铒颗粒","超干无水氯化铒"]},
+    Tm:{cn:"铥",en:"Thulium",tags:["METAL","CVD"],products:["金属铥","超干无水氯化铥"]},
+    Yb:{cn:"镱",en:"Ytterbium",tags:["METAL","PVD","CVD"],products:["金属镱","金属镱靶","金属镱圆锭","金属镱丝/颗粒","超干无水氯化镱"]},
+    Lu:{cn:"镥",en:"Lutetium",tags:["METAL","PVD","CVD"],products:["金属镥","金属镥靶","超干无水氯化镥"]},
+    Al:{cn:"铝",en:"Aluminium",tags:["PVD","POWDER","ALLOY"],products:["金属铝靶","金属铝颗粒","钇铝合金靶","铝钪合金靶","铝钕合金靶","铝钪锗钽多元合金靶","球形氧化铝粉末","YAG粉末"]},
+    Ti:{cn:"钛",en:"Titanium",tags:["PVD"],products:["金属钛靶材"]},
+    V:{cn:"钒",en:"Vanadium",tags:["ALLOY","PVD"],products:["镍钒合金靶"]},
+    Cr:{cn:"铬",en:"Chromium",tags:["PVD","ALLOY"],products:["金属铬靶","镍铬合金靶"]},
+    Ni:{cn:"镍",en:"Nickel",tags:["PVD","ALLOY"],products:["金属镍靶","金属镍颗粒","镍铬合金靶","镍钒合金靶"]},
+    Cu:{cn:"铜",en:"Copper",tags:["PVD","ALLOY","POWDER"],products:["金属铜靶","金属铜颗粒","钬铜合金棒","钬铜合金球形粉"]},
+    Ge:{cn:"锗",en:"Germanium",tags:["ALLOY","PVD"],products:["铝钪锗钽多元合金靶"]},
+    Hf:{cn:"铪",en:"Hafnium",tags:["PVD"],products:["金属铪靶"]},
+    Ta:{cn:"钽",en:"Tantalum",tags:["PVD","ALLOY"],products:["金属钽靶","铝钪锗钽多元合金靶"]},
+    Sn:{cn:"锡",en:"Tin",tags:["METAL","PVD"],products:["金属锡","金属锡颗粒"]}
   };
 
   const mainPositions = {
@@ -93,19 +93,20 @@
     铪:"hafnium", 钽:"tantalum", 锡:"stannum"
   };
   const specialProductLinks = {
-    "铝金属靶材":"products/aluminum-metal-target.html",
-    "铝金属颗粒":"products/aluminium-metal-granule.html",
-    "铝钇合金靶材":"products/aluminium-yttrium-alloy-target.html",
-    "铝钪合金靶材":"products/aluminium-scandium-alloy-target.html",
-    "铝钕合金靶材":"products/aluminium-neodymium-alloy-target.html",
-    "铝钪锗钽合金靶材":"products/aluminium-scandium-germanium-tantalum-alloy-target.html",
-    "镍铬合金靶材":"products/nickel-chromium-alloy-target.html",
-    "镍钒合金靶材":"products/nickel-vanadium-alloy-target.html",
+    "金属铝靶":"products/aluminum-metal-target.html",
+    "金属铝颗粒":"products/aluminium-metal-granule.html",
+    "钇铝合金靶":"products/aluminium-yttrium-alloy-target.html",
+    "铝钪合金靶":"products/aluminium-scandium-alloy-target.html",
+    "铝钕合金靶":"products/aluminium-neodymium-alloy-target.html",
+    "铝钪锗钽多元合金靶":"products/aluminium-scandium-germanium-tantalum-alloy-target.html",
+    "镍铬合金靶":"products/nickel-chromium-alloy-target.html",
+    "镍钒合金靶":"products/nickel-vanadium-alloy-target.html",
     "钬铜合金棒":"products/holmium-copper-rod.html",
-    "钬铜球形粉末":"products/holmium-copper-spherical-powder.html",
+    "钬铜合金球形粉":"products/holmium-copper-spherical-powder.html",
     "球形氧化铝粉末":"products/spherical-aluminum-oxide.html",
     "球形氧化钇粉末":"products/spherical-yttrium-oxide.html",
-    "钇铝石榴石粉末":"products/yttrium-aluminum-garnet.html"
+    "YAG粉末":"products/yttrium-aluminum-garnet.html",
+    "金属镱丝/颗粒":"products/ytterbium-metal-granule.html"
   };
   const productHref = (product) => {
     if (specialProductLinks[product]) return specialProductLinks[product];
@@ -113,14 +114,21 @@
     if (chloride && elementSlugs[chloride[1]]) {
       return `products/ultra-dry-anhydrous-${elementSlugs[chloride[1]]}-chloride.html`;
     }
-    const metal = product.match(/^高纯(.)金属$/);
+    const metal = product.match(/^金属(.)$/);
     if (metal && elementSlugs[metal[1]]) {
       return `products/${elementSlugs[metal[1]]}-metal.html`;
     }
-    const form = product.match(/^(.)金属(靶材|颗粒|块)$/);
-    if (form && elementSlugs[form[1]]) {
-      const suffix = {靶材:"target", 颗粒:"granule", 块:"block"}[form[2]];
-      return `products/${elementSlugs[form[1]]}-metal-${suffix}.html`;
+    const target = product.match(/^金属(.)(靶|靶材)$/);
+    if (target && elementSlugs[target[1]]) {
+      return `products/${elementSlugs[target[1]]}-metal-target.html`;
+    }
+    const granule = product.match(/^金属(.)颗粒$/);
+    if (granule && elementSlugs[granule[1]]) {
+      return `products/${elementSlugs[granule[1]]}-metal-granule.html`;
+    }
+    const block = product.match(/^金属(.)(方锭|圆锭)$/);
+    if (block && elementSlugs[block[1]]) {
+      return `products/${elementSlugs[block[1]]}-metal-block.html`;
     }
     return "products.html";
   };
