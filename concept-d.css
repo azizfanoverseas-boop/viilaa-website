@@ -212,7 +212,7 @@
   font-size: 13px;
   font-weight: 800;
 }
-.form-gallery figcaption small { display: block; color: #778180; font-size: 9px; }
+.form-gallery figcaption small { display: none; }
 .spec-rail {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
