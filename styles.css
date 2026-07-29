@@ -941,6 +941,29 @@ h3 {
   gap: 18px;
 }
 
+#products {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: clamp(28px, 4vh, 52px);
+  padding-bottom: clamp(28px, 4vh, 52px);
+}
+
+#products .section-head {
+  max-width: none;
+  margin-bottom: clamp(22px, 3vh, 38px);
+}
+
+#products .product-line-summary {
+  max-width: none;
+  white-space: nowrap;
+}
+
+#products .product-card img {
+  max-height: 38vh;
+}
+
 .product-card {
   overflow: hidden;
   background: var(--white);
@@ -2246,6 +2269,18 @@ h3 {
 }
 
 @media (max-width: 1120px) {
+  #products {
+    min-height: auto;
+  }
+
+  #products .product-line-summary {
+    white-space: normal;
+  }
+
+  #products .product-card img {
+    max-height: none;
+  }
+
   .product-grid,
   .application-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

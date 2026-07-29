@@ -226,7 +226,7 @@
     "core product lines": ["大核心产品线", "개 핵심 제품군"],
     "purity, size, shape, and packaging": ["纯度、尺寸、形状与包装", "순도, 크기, 형상 및 포장"],
     "materials for thin film workflows": ["面向薄膜工艺的材料", "박막 공정을 위한 소재"],
-    "Materials organized by purchasing workflow": ["按采购流程组织的材料体系", "구매 업무 흐름에 맞춘 소재 구성"],
+    "Our Product Line Categories": ["我们的产品线分类", "제품 라인 분류"],
     "The product structure follows how engineering and sourcing teams usually search: base high-purity metals, deposition materials, precursor chlorides, and performance powders.": [
       "产品体系遵循工程与采购团队的常用检索方式，涵盖基础高纯金属、沉积材料、氯化物前驱体和功能粉末。",
       "제품 구성은 엔지니어링 및 구매팀의 검색 방식에 맞춰 고순도 금속, 증착 소재, 염화물 전구체와 기능성 분말로 구분됩니다."
