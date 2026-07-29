@@ -140,7 +140,8 @@
     document.querySelectorAll(`[data-element="${symbol}"]`).forEach((cell) => cell.classList.add("is-selected"));
     document.querySelector("#element-number").textContent = symbols.indexOf(symbol) + 1;
     document.querySelector("#element-symbol").textContent = symbol;
-    document.querySelector("#element-name").textContent = `${info.cn} · ${info.en}`;
+    document.querySelector("#element-cn").textContent = info.cn;
+    document.querySelector("#element-name").textContent = info.en;
     document.querySelector("#element-title").textContent = `${info.cn}相关产品`;
     document.querySelector("#element-tags").innerHTML = info.tags.map((tag) => `<span>${tag}</span>`).join("");
     document.querySelector("#element-product-list").innerHTML = info.products

@@ -180,15 +180,22 @@ button.element-cell {
   font-size: 12px;
   font-weight: 800;
 }
-.element-hero strong {
-  display: block;
+.element-symbol-line {
   margin-top: 30px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+.element-symbol-line strong {
+  display: block;
+  margin: 0;
   font-size: 64px;
   line-height: .9;
 }
 .element-hero small {
   display: block;
-  margin-top: 10px;
+  margin-top: 14px;
+  font-size: 15px;
   font-weight: 800;
 }
 .element-summary { padding: 19px 18px 18px; }
@@ -282,5 +289,6 @@ button.element-cell {
   .periodic-series { min-width: 760px; }
   .element-products { grid-template-columns: 135px 1fr; }
   .element-hero { min-height: 205px; padding: 14px; }
-  .element-hero strong { font-size: 48px; }
+  .element-symbol-line { gap: 12px; }
+  .element-symbol-line strong { font-size: 48px; }
 }
