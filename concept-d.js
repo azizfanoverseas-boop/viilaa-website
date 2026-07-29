@@ -1,19 +1,4 @@
 (() => {
-  const tabs = [...document.querySelectorAll(".workbench-tab")];
-  const panels = [...document.querySelectorAll("[data-workbench-panel]")];
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const target = tab.dataset.panel;
-      tabs.forEach((item) => item.classList.toggle("is-active", item === tab));
-      panels.forEach((panel) => {
-        const active = panel.dataset.workbenchPanel === target;
-        panel.hidden = !active;
-        panel.classList.toggle("is-active", active);
-      });
-    });
-  });
-
   const symbols = [
     "H","He","Li","Be","B","C","N","O","F","Ne","Na","Mg","Al","Si","P","S","Cl","Ar",
     "K","Ca","Sc","Ti","V","Cr","Mn","Fe","Co","Ni","Cu","Zn","Ga","Ge","As","Se","Br","Kr",

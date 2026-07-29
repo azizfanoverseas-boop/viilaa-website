@@ -9,8 +9,8 @@
       content="Supplier of high-purity rare earth metals, PVD sputtering targets, evaporation materials, CVD precursor chlorides, and high-performance powders."
     />
     <link rel="stylesheet" href="styles.css?v=20260729a" />
-    <link rel="stylesheet" href="concept-d.css?v=7" />
-    <link rel="stylesheet" href="periodic-explorer.css?v=2" />
+    <link rel="stylesheet" href="concept-d.css?v=8" />
+    <link rel="stylesheet" href="periodic-explorer.css?v=3" />
   </head>
   <body>
     <header class="site-header">
@@ -103,33 +103,16 @@
       </section>
 
       <section class="material-workbench" aria-labelledby="workbench-title">
-        <div class="workbench-intro">
-          <div>
-            <p class="eyebrow">MATERIAL WORKBENCH</p>
-            <h2 id="workbench-title">一项材料需求，需要被逐步定义。</h2>
-          </div>
-        </div>
-
-        <div class="workbench-shell">
-          <nav class="workbench-nav" aria-label="材料项目阶段">
-            <button class="workbench-tab is-active" type="button" data-panel="route">
-              <span>01</span><strong>选择材料路径</strong><small>从工艺出发</small>
-            </button>
-            <button class="workbench-tab" type="button" data-panel="spec">
-              <span>02</span><strong>构建交付规格</strong><small>从元素到形态</small>
-            </button>
-            <button class="workbench-tab" type="button" data-panel="verify">
-              <span>03</span><strong>确定验证项目</strong><small>从声明到证据</small>
-            </button>
-            <button class="workbench-tab" type="button" data-panel="supply">
-              <span>04</span><strong>衔接后续供货</strong><small>从样品到复购</small>
-            </button>
-          </nav>
-
-          <div class="workbench-stage">
+        <div class="workbench-stage">
             <section class="workbench-panel is-active" data-workbench-panel="route">
+              <div class="workbench-intro">
+                <div>
+                  <p class="eyebrow">MATERIAL WORKBENCH</p>
+                  <h2 id="workbench-title">一项材料需求，需要被逐步定义。</h2>
+                </div>
+              </div>
               <div class="panel-heading">
-                <p>EXPLORE BY ELEMENT</p>
+                <p>01 / EXPLORE BY ELEMENT</p>
                 <h3>按元素探索 Viilaa 材料</h3>
               </div>
               <div class="periodic-explorer">
@@ -166,9 +149,9 @@
               <p class="panel-note">现有网站共识别出 26 个相关元素；产品数量与关联关系依据当前产品目录整理。</p>
             </section>
 
-            <section class="workbench-panel" data-workbench-panel="spec" hidden>
+            <section class="workbench-panel" data-workbench-panel="spec">
               <div class="panel-heading">
-                <p>BUILD THE SPECIFICATION</p>
+                <p>02 / BUILD THE SPECIFICATION</p>
                 <h3>同一种元素，可以是不同交付物。</h3>
               </div>
               <div class="spec-builder">
@@ -191,9 +174,9 @@
               </div>
             </section>
 
-            <section class="workbench-panel" data-workbench-panel="verify" hidden>
+            <section class="workbench-panel" data-workbench-panel="verify">
               <div class="panel-heading">
-                <p>DEFINE THE EVIDENCE</p>
+                <p>03 / DEFINE THE EVIDENCE</p>
                 <h3>检测不是设备清单，而是采购判断依据。</h3>
               </div>
               <div class="evidence-console">
@@ -239,9 +222,9 @@
               </div>
             </section>
 
-            <section class="workbench-panel" data-workbench-panel="supply" hidden>
+            <section class="workbench-panel" data-workbench-panel="supply">
               <div class="panel-heading">
-                <p>CREATE A REPEATABLE PATH</p>
+                <p>04 / CREATE A REPEATABLE PATH</p>
                 <h3 class="allow-wrap">不是一句“从研发到量产”，<br>而是四次明确确认。</h3>
               </div>
               <div class="supply-map">
@@ -251,7 +234,6 @@
                 <div><span>04</span><strong>规格留档</strong><p>保留后续批次采购的确认基础。</p></div>
               </div>
             </section>
-          </div>
         </div>
       </section>
 
@@ -351,6 +333,6 @@
     </footer>
     <script defer src="site.js?v=20260720c"></script>
     <script defer src="i18n.js?v=20260728f" data-viilaa-i18n="true"></script>
-    <script defer src="concept-d.js?v=2"></script>
+    <script defer src="concept-d.js?v=3"></script>
   </body>
 </html>

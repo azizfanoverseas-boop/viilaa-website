@@ -1,12 +1,9 @@
 @media (min-width: 981px) {
-  .workbench-shell,
-  .workbench-stage,
+  .workbench-stage { height: auto; }
   .workbench-panel {
-    height: 720px;
-  }
-  .workbench-panel {
-    min-height: 0;
-    overflow: hidden;
+    height: auto;
+    min-height: 100svh;
+    overflow: visible;
   }
   .workbench-intro h2,
   .panel-heading h3 {
