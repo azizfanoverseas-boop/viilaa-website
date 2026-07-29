@@ -224,6 +224,7 @@ button.element-cell {
   letter-spacing: .08em;
 }
 .element-product-list {
+  height: 235px;
   max-height: 235px;
   margin: 0 0 15px;
   padding: 0;
@@ -279,7 +280,7 @@ button.element-cell {
     grid-template-columns: 190px 1fr;
   }
   .element-hero { min-height: 200px; }
-  .element-product-list { max-height: 100px; }
+  .element-product-list { height: 100px; max-height: 100px; }
 }
 @media (max-width: 700px) {
   .workbench-panel[data-workbench-panel="route"] { padding: 32px 16px; }
