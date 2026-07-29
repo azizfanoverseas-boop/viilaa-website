@@ -5,9 +5,25 @@
     || new URLSearchParams(window.location.search).get("lang")
     || "zh";
 
-  if (!["zh", "en", "ko"].includes(language) || language === "zh") return;
+  if (!["zh", "en", "ko"].includes(language)) return;
 
   const copy = {
+    zh: {
+      "VIILAA PRODUCT COVERAGE": "VIILAA 产品覆盖",
+      "Target": "靶材",
+      "Block": "块状",
+      "Granule": "颗粒",
+      "Composition": "成分",
+      "Purity": "纯度",
+      "Geometry": "形态",
+      "Handling": "交付条件",
+      "AVAILABLE TESTING / 常规检测支持": "常规检测支持",
+      "EXTERNAL LAB / 外部专项检测": "外部专项检测",
+      "01 / SEMICONDUCTOR": "01 / 半导体",
+      "02 / DISPLAY": "02 / 显示",
+      "03 / PHOTONICS": "03 / 光子学",
+      "04 / ENERGY": "04 / 能源"
+    },
     en: {
       "材料工作台": "MATERIAL WORKBENCH",
       "01 / 按元素探索": "01 / EXPLORE BY ELEMENT",
@@ -259,6 +275,7 @@
   function translateWorkbench() {
     const workbench = document.querySelector(".material-workbench");
     if (!workbench) return;
+    if (language === "zh") return;
 
     workbench.querySelectorAll(".element-cell.is-available").forEach((cell) => {
       const symbol = cell.dataset.element;
