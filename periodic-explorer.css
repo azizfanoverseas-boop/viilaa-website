@@ -47,6 +47,7 @@
   gap: 18px;
   color: #819594;
   font-size: 12px;
+  font-weight: 700;
   letter-spacing: .03em;
 }
 .periodic-legend span {
@@ -227,12 +228,12 @@ button.element-cell {
   padding: 0;
   border-bottom: 1px solid rgba(151, 175, 174, .13);
   color: #c2cfce;
-  font-size: 9px;
-  line-height: 1.3;
+  font-size: 13px;
+  line-height: 1.4;
 }
 .element-product-list li a {
-  min-height: 32px;
-  padding: 7px 0;
+  min-height: 38px;
+  padding: 8px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
