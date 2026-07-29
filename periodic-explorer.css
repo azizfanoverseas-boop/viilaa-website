@@ -40,14 +40,14 @@
   background-size: 24px 24px;
 }
 .periodic-legend {
-  min-height: 24px;
-  margin-bottom: 10px;
+  min-height: 30px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 18px;
   color: #819594;
-  font-size: 8px;
-  letter-spacing: .06em;
+  font-size: 12px;
+  letter-spacing: .03em;
 }
 .periodic-legend span {
   display: flex;
@@ -55,8 +55,8 @@
   gap: 6px;
 }
 .periodic-legend i {
-  width: 8px;
-  height: 8px;
+  width: 11px;
+  height: 11px;
   border: 1px solid rgba(151, 175, 174, .3);
   background: rgba(151, 175, 174, .06);
 }
@@ -224,11 +224,38 @@ button.element-cell {
   scrollbar-color: #3b7975 transparent;
 }
 .element-product-list li {
-  padding: 7px 0;
+  padding: 0;
   border-bottom: 1px solid rgba(151, 175, 174, .13);
   color: #c2cfce;
   font-size: 9px;
   line-height: 1.3;
+}
+.element-product-list li a {
+  min-height: 32px;
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  transition: color .2s, padding-left .2s;
+}
+.element-product-list li a span {
+  color: #67c8ff;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity .2s, transform .2s;
+}
+.element-product-list li a:hover,
+.element-product-list li a:focus-visible {
+  padding-left: 5px;
+  color: #ffffff;
+}
+.element-product-list li a:hover span,
+.element-product-list li a:focus-visible span {
+  opacity: 1;
+  transform: translateX(0);
 }
 .element-summary > a {
   color: #67c8ff;

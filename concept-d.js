@@ -85,6 +85,46 @@
   lanthanides.forEach((symbol) => lanRow?.append(makeCell(symbol)));
   actinides.forEach((symbol) => actRow?.append(makeCell(symbol)));
 
+  const elementSlugs = {
+    钪:"scandium", 钇:"yttrium", 镧:"lanthanum", 铈:"cerium", 镨:"praseodymium",
+    钕:"neodymium", 钐:"samarium", 铕:"europium", 钆:"gadolinium", 铽:"terbium",
+    镝:"dysprosium", 钬:"holmium", 铒:"erbium", 铥:"thulium", 镱:"ytterbium",
+    镥:"lutetium", 钛:"titanium", 铬:"chromium", 镍:"nickel", 铜:"copper",
+    铪:"hafnium", 钽:"tantalum", 锡:"stannum"
+  };
+  const specialProductLinks = {
+    "铝金属靶材":"products/aluminum-metal-target.html",
+    "铝金属颗粒":"products/aluminium-metal-granule.html",
+    "铝钇合金靶材":"products/aluminium-yttrium-alloy-target.html",
+    "铝钪合金靶材":"products/aluminium-scandium-alloy-target.html",
+    "铝钕合金靶材":"products/aluminium-neodymium-alloy-target.html",
+    "铝钪锗钽合金靶材":"products/aluminium-scandium-germanium-tantalum-alloy-target.html",
+    "镍铬合金靶材":"products/nickel-chromium-alloy-target.html",
+    "镍钒合金靶材":"products/nickel-vanadium-alloy-target.html",
+    "钬铜合金棒":"products/holmium-copper-rod.html",
+    "钬铜球形粉末":"products/holmium-copper-spherical-powder.html",
+    "球形氧化铝粉末":"products/spherical-aluminum-oxide.html",
+    "球形氧化钇粉末":"products/spherical-yttrium-oxide.html",
+    "钇铝石榴石粉末":"products/yttrium-aluminum-garnet.html"
+  };
+  const productHref = (product) => {
+    if (specialProductLinks[product]) return specialProductLinks[product];
+    const chloride = product.match(/^超干无水氯化(.)$/);
+    if (chloride && elementSlugs[chloride[1]]) {
+      return `products/ultra-dry-anhydrous-${elementSlugs[chloride[1]]}-chloride.html`;
+    }
+    const metal = product.match(/^高纯(.)金属$/);
+    if (metal && elementSlugs[metal[1]]) {
+      return `products/${elementSlugs[metal[1]]}-metal.html`;
+    }
+    const form = product.match(/^(.)金属(靶材|颗粒|块)$/);
+    if (form && elementSlugs[form[1]]) {
+      const suffix = {靶材:"target", 颗粒:"granule", 块:"block"}[form[2]];
+      return `products/${elementSlugs[form[1]]}-metal-${suffix}.html`;
+    }
+    return "products.html";
+  };
+
   const renderElement = (symbol) => {
     const info = active[symbol];
     if (!info) return;
@@ -95,7 +135,9 @@
     document.querySelector("#element-name").textContent = `${info.cn} · ${info.en}`;
     document.querySelector("#element-title").textContent = `${info.cn}相关产品`;
     document.querySelector("#element-tags").innerHTML = info.tags.map((tag) => `<span>${tag}</span>`).join("");
-    document.querySelector("#element-product-list").innerHTML = info.products.map((product) => `<li>${product}</li>`).join("");
+    document.querySelector("#element-product-list").innerHTML = info.products
+      .map((product) => `<li><a href="${productHref(product)}">${product}<span aria-hidden="true">→</span></a></li>`)
+      .join("");
   };
 
   document.querySelectorAll(".element-cell.is-available").forEach((cell) => {
