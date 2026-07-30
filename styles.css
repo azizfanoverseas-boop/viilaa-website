@@ -15,6 +15,10 @@
   --amber: #087ec1;
   --radius: 8px;
   --shadow: 0 18px 50px rgba(23, 32, 38, 0.12);
+  --type-caption: 14px;
+  --type-label: 15px;
+  --type-body: 17px;
+  --type-card-title: 20px;
 }
 
 * {
@@ -37,6 +41,7 @@ body {
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Arial, sans-serif;
   line-height: 1.55;
+  font-size: var(--type-body);
 }
 
 img {
@@ -97,7 +102,7 @@ a {
 
 .brand small {
   color: #7d8492;
-  font-size: 12px;
+  font-size: var(--type-caption);
   margin-top: 1px;
 }
 
@@ -272,7 +277,7 @@ a {
 
 .language-switcher-toggle strong {
   min-width: 0;
-  font-size: 13px;
+  font-size: var(--type-caption);
   letter-spacing: 0;
 }
 
@@ -326,7 +331,7 @@ a {
   padding: 9px 11px;
   color: #263b4e;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: var(--type-caption);
   font-weight: 700;
   text-shadow: none;
 }
@@ -411,7 +416,7 @@ a {
   border-radius: 4px;
   box-shadow: 0 8px 20px rgba(7, 21, 31, 0.12);
   content: "BACK";
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   line-height: 1;
   opacity: 0;
@@ -524,7 +529,7 @@ a {
 .eyebrow {
   margin: 0 0 12px;
   color: var(--teal);
-  font-size: 12px;
+  font-size: var(--type-label);
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -731,7 +736,7 @@ h3 {
   border: 1px solid rgba(8, 126, 193, 0.22);
   border-radius: 999px;
   backdrop-filter: blur(12px);
-  font-size: 12px;
+  font-size: var(--type-caption);
   font-weight: 760;
   animation: reelGlow 10s ease-in-out infinite;
 }
@@ -798,7 +803,7 @@ h3 {
 
 .hero-story span {
   color: #ffb7bf;
-  font-size: 12px;
+  font-size: var(--type-caption);
   font-weight: 900;
 }
 
@@ -810,7 +815,7 @@ h3 {
 .hero-story small {
   margin-top: 6px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 13px;
+  font-size: var(--type-caption);
 }
 
 @keyframes heroSlide {
@@ -993,20 +998,20 @@ h3 {
   min-height: 92px;
   margin: 0 0 18px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: var(--type-body);
 }
 
 .product-card a {
   color: var(--blue);
   font-weight: 780;
-  font-size: 14px;
+  font-size: var(--type-label);
 }
 
 .line-label {
   display: block;
   margin-bottom: 10px;
   color: var(--amber);
-  font-size: 12px;
+  font-size: var(--type-caption);
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -1359,7 +1364,7 @@ h3 {
 
 .rfq-guidance span {
   color: var(--teal);
-  font-size: 12px;
+  font-size: var(--type-caption);
   font-weight: 850;
 }
 
@@ -1394,7 +1399,7 @@ h3 {
   display: grid;
   gap: 8px;
   color: #334650;
-  font-size: 13px;
+  font-size: var(--type-label);
   font-weight: 750;
 }
 
@@ -1472,7 +1477,7 @@ h3 {
 
 .contact-list span {
   color: var(--teal);
-  font-size: 12px;
+  font-size: var(--type-caption);
   font-weight: 850;
   text-transform: uppercase;
 }
@@ -1543,7 +1548,7 @@ h3 {
   display: grid;
   gap: 8px;
   color: #334650;
-  font-size: 13px;
+  font-size: var(--type-label);
   font-weight: 760;
 }
 
@@ -1629,7 +1634,7 @@ h3 {
 .map-copy .map-provider-note {
   min-height: 1.5em;
   margin: 10px 0 0;
-  font-size: 13px;
+  font-size: var(--type-caption);
 }
 
 .map-frame {
@@ -1849,7 +1854,7 @@ h3 {
   background: transparent;
   border: 0;
   font: inherit;
-  font-size: 13px;
+  font-size: var(--type-caption);
   font-weight: 800;
   cursor: pointer;
   transform: translateY(-50%);
@@ -2037,7 +2042,7 @@ h3 {
 .formula-spec dt,
 .mini-specs dt {
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--type-caption);
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -2224,7 +2229,7 @@ h3 {
 .spec-table th {
   width: 38%;
   color: var(--muted);
-  font-size: 13px;
+  font-size: var(--type-caption);
 }
 
 .spec-table td {
@@ -2881,7 +2886,7 @@ html[data-language="zh"] .company-closing h2 { max-width:none; white-space:nowra
 .technology-flow span,
 .technology-number {
   color: #087ec1;
-  font-size: 13px;
+  font-size: var(--type-label);
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -2960,7 +2965,7 @@ html[data-language="zh"] .company-closing h2 { max-width:none; white-space:nowra
   border-radius: 999px;
   color: #243c47;
   background: rgba(255, 255, 255, 0.64);
-  font-size: 13px;
+  font-size: var(--type-caption);
   font-weight: 720;
 }
 
@@ -3022,7 +3027,7 @@ html[data-language="zh"] .company-closing h2 { max-width:none; white-space:nowra
 
 .quality-reserved-grid span {
   color: #6d818a;
-  font-size: 13px;
+  font-size: var(--type-caption);
   font-weight: 800;
   letter-spacing: 0.12em;
 }
@@ -3075,7 +3080,7 @@ html[data-language="zh"] .company-closing h2 { max-width:none; white-space:nowra
 
 .quality-equipment-card figcaption span {
   color: #6d818a;
-  font-size: 12px;
+  font-size: var(--type-caption);
   font-weight: 800;
   letter-spacing: 0.12em;
 }

@@ -46,7 +46,7 @@
   align-items: center;
   gap: 18px;
   color: #819594;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: .03em;
 }
@@ -149,7 +149,7 @@ button.element-cell {
 }
 .periodic-series > span {
   color: #087ec1;
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 800;
 }
 .series-row {
@@ -177,7 +177,7 @@ button.element-cell {
   position: absolute;
   right: 18px;
   top: 15px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
 }
 .element-symbol-line {
@@ -202,7 +202,7 @@ button.element-cell {
 .element-summary > p {
   margin: 0;
   color: #087ec1;
-  font-size: 7px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: .14em;
 }
@@ -220,7 +220,7 @@ button.element-cell {
   padding: 4px 6px;
   border: 1px solid rgba(8, 126, 193, .32);
   color: #087ec1;
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: .08em;
 }
 .element-product-list {
@@ -269,7 +269,7 @@ button.element-cell {
 }
 .element-summary > a {
   color: #087ec1;
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 800;
   text-decoration: none;
 }
