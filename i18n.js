@@ -316,6 +316,7 @@
     "Purity, composition, form, size, tolerance, and packaging preference.": ["纯度、成分、形态、尺寸、公差和包装要求。", "순도, 조성, 형태, 크기, 공차 및 포장 방식."],
     "Application context": ["应用信息", "적용 정보"],
     "Quantity, target process, coating method, research use, or production plan.": ["数量、目标工艺、镀膜方式、研发用途或生产计划。", "수량, 대상 공정, 코팅 방식, 연구 용도 또는 생산 계획."],
+    "Quantity, target process, coating method, delivery location, desired lead time, trade terms, research use, or production plan.": ["数量、目标工艺、镀膜方式、交付地点、期望交期、贸易条件、研发用途或生产计划。", "수량, 대상 공정, 코팅 방식, 납품 장소, 희망 납기, 거래 조건, 연구 용도 또는 생산 계획."],
     "Go to Contact Page": ["前往联系页面", "문의 페이지로 이동"],
 
     "Search high-purity materials by product line and specification": ["按产品线与规格查找高纯材料", "제품군과 사양으로 고순도 소재 검색"],
