@@ -960,6 +960,11 @@ h3 {
   white-space: nowrap;
 }
 
+#products .section-head .eyebrow,
+#products .line-label {
+  color: #087ec1;
+}
+
 #products .product-card img {
   max-height: 38vh;
 }
