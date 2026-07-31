@@ -513,25 +513,37 @@
 .verification-grain-background {
   position: absolute;
   width: min(760px, 48vw);
-  height: 280px;
+  height: 360px;
   top: -34px;
   right: -36px;
   opacity: .46;
   filter: blur(.6px) grayscale(.48) contrast(2);
   background: url("assets/testing-showcase/grain-microstructure.webp") center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .72) 34%, #000 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .72) 34%, #000 100%);
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .72) 34%, #000 100%),
+    linear-gradient(180deg, #000 0%, #000 44%, rgba(0, 0, 0, .62) 68%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .72) 34%, #000 100%),
+    linear-gradient(180deg, #000 0%, #000 44%, rgba(0, 0, 0, .62) 68%, transparent 100%);
+  mask-composite: intersect;
 }
 .verification-distribution-background {
   position: absolute;
   width: min(820px, 54vw);
-  height: 230px;
+  height: 330px;
   top: -8px;
   left: 28px;
   overflow: hidden;
   opacity: .82;
-  -webkit-mask-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, .72) 68%, transparent 100%);
-  mask-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, .72) 68%, transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(90deg, #000 0%, rgba(0, 0, 0, .72) 68%, transparent 100%),
+    linear-gradient(180deg, #000 0%, #000 48%, rgba(0, 0, 0, .58) 72%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, #000 0%, rgba(0, 0, 0, .72) 68%, transparent 100%),
+    linear-gradient(180deg, #000 0%, #000 48%, rgba(0, 0, 0, .58) 72%, transparent 100%);
+  mask-composite: intersect;
 }
 .verification-distribution-background i {
   position: absolute;
@@ -539,7 +551,7 @@
 }
 .verification-distribution-background .distribution-curve {
   width: 510px;
-  height: 215px;
+  height: 280px;
   left: 28px;
   top: 70px;
   border: 3px solid rgba(47, 150, 240, .56);
