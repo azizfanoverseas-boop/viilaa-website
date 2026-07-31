@@ -929,6 +929,27 @@ h3 {
   padding: clamp(68px, 9vw, 118px) clamp(20px, 5vw, 72px);
 }
 
+@media (min-width: 981px) and (prefers-reduced-motion: no-preference) {
+  html.home-page {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  html.home-page .hero,
+  html.home-page #products,
+  html.home-page .material-workbench .workbench-panel,
+  html.home-page .verification-followup,
+  html.home-page .applications,
+  html.home-page .quality-band {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  html.home-page .site-footer {
+    scroll-snap-align: end;
+  }
+}
+
 .section-head {
   max-width: 860px;
   margin-bottom: clamp(32px, 5vw, 54px);
@@ -1304,9 +1325,11 @@ h3 {
 }
 
 .quality-band {
+  min-height: 100svh;
   display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(320px, 1fr);
   gap: clamp(30px, 5vw, 72px);
+  align-items: center;
   padding: clamp(70px, 9vw, 112px) clamp(20px, 5vw, 72px);
   color: #fff;
   background: #172026;
