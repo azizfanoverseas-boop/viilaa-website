@@ -950,6 +950,20 @@ h3 {
   }
 }
 
+@media (min-width: 981px) {
+  html.home-page {
+    --home-content-gutter: max(3vw, calc((100vw - 1800px) / 2 + 28px));
+  }
+
+  html.home-page #products,
+  html.home-page .workbench-panel,
+  html.home-page .applications,
+  html.home-page .quality-band {
+    padding-right: var(--home-content-gutter) !important;
+    padding-left: var(--home-content-gutter) !important;
+  }
+}
+
 .section-head {
   max-width: 860px;
   margin-bottom: clamp(32px, 5vw, 54px);
