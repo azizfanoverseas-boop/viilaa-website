@@ -722,8 +722,8 @@ html[data-language="ko"] .verification-followup .panel-heading h3 {
 .applications {
   min-height: 100svh;
   padding: clamp(38px, 5vh, 70px) max(3vw, calc((100vw - 1800px) / 2 + 28px));
-  color: #f4f8fa;
-  background: #071218;
+  color: #172026;
+  background: #f7f9fa;
 }
 .applications .section-head {
   margin-bottom: clamp(24px, 3vh, 42px);
@@ -731,7 +731,7 @@ html[data-language="ko"] .verification-followup .panel-heading h3 {
 .applications .section-head .eyebrow { color: #087ec1; }
 .applications .section-head h2 {
   max-width: none;
-  color: #f4f8fa;
+  color: #172026;
   font-size: clamp(30px, 4vw, 50px);
   line-height: 1.05;
 }
@@ -745,7 +745,7 @@ html[data-language="ko"] .verification-followup .panel-heading h3 {
   padding: 0;
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(180, 216, 226, .18);
+  border: 1px solid rgba(20, 48, 61, .18);
   border-radius: 0;
   background: #0a171c;
 }
