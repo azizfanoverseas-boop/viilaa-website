@@ -455,7 +455,250 @@
 }
 .workbench-rfq .rfq-guidance { width: 100%; }
 .workbench-rfq .rfq-link { align-self: flex-start; }
-.verification-followup { min-height: 100svh; }
+.verification-followup {
+  --wb-line: rgba(184, 220, 217, .2);
+  --wb-aqua: #087ec1;
+  min-height: 100svh;
+  height: 100svh;
+  max-height: 100svh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: clamp(14px, 2vh, 24px);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  color: #f4f8f7;
+  background:
+    radial-gradient(circle at 88% 4%, rgba(33, 102, 103, .24), transparent 34%),
+    linear-gradient(145deg, #071417 0%, #061113 56%, #071619 100%);
+}
+.verification-followup > *:not(.verification-background) {
+  position: relative;
+  z-index: 2;
+}
+.verification-followup .panel-heading {
+  display: block;
+}
+.verification-followup .panel-heading > p {
+  margin: 0 0 12px;
+}
+.verification-followup .panel-heading h3 {
+  max-width: none;
+  font-size: clamp(34px, 3.55vw, 64px);
+  line-height: 1.08;
+  white-space: nowrap;
+}
+.verification-background {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.verification-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .22;
+  background:
+    linear-gradient(115deg, transparent 0 69%, rgba(47, 150, 240, .22) 69.1% 69.2%, transparent 69.3%),
+    linear-gradient(25deg, transparent 0 77%, rgba(136, 181, 187, .18) 77.1% 77.2%, transparent 77.3%),
+    radial-gradient(circle at 72% 78%, transparent 0 145px, rgba(47, 150, 240, .18) 146px 147px, transparent 148px);
+}
+.verification-grain-background {
+  position: absolute;
+  width: min(760px, 48vw);
+  height: 280px;
+  top: -34px;
+  right: -36px;
+  opacity: .46;
+  filter: blur(.6px) grayscale(.48) contrast(2);
+  background: url("assets/testing-showcase/grain-microstructure.webp") center / cover no-repeat;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .72) 34%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .72) 34%, #000 100%);
+}
+.verification-distribution-background {
+  position: absolute;
+  width: min(820px, 54vw);
+  height: 230px;
+  top: -8px;
+  left: 28px;
+  overflow: hidden;
+  opacity: .82;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, .72) 68%, transparent 100%);
+  mask-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, .72) 68%, transparent 100%);
+}
+.verification-distribution-background i {
+  position: absolute;
+  display: block;
+}
+.verification-distribution-background .distribution-curve {
+  width: 510px;
+  height: 215px;
+  left: 28px;
+  top: 70px;
+  border: 3px solid rgba(47, 150, 240, .56);
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.verification-distribution-background .cumulative-curve {
+  width: 360px;
+  height: 135px;
+  border: 3px solid rgba(123, 181, 208, .48);
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 0 100% 0 0;
+  transform: rotate(-12deg);
+}
+.verification-distribution-background .cumulative-curve-a {
+  left: 240px;
+  top: 105px;
+}
+.verification-distribution-background .cumulative-curve-b {
+  left: 470px;
+  top: 26px;
+  transform: rotate(168deg);
+}
+.verification-showcase {
+  width: 100%;
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(580px, 1fr);
+  gap: 8px;
+}
+.verification-primary,
+.verification-equipment-card {
+  min-height: 0;
+  min-width: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(133, 177, 184, .28);
+  background: #0c1c20;
+}
+.verification-primary::after,
+.verification-equipment-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(1, 9, 11, .9) 100%);
+}
+.verification-primary img,
+.verification-equipment-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.verification-primary figcaption,
+.verification-equipment-card figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 22px;
+  bottom: 18px;
+  left: 22px;
+}
+.verification-primary figcaption span,
+.verification-equipment-card figcaption span {
+  display: block;
+  color: #2f96f0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.verification-primary figcaption strong {
+  display: block;
+  margin-top: 7px;
+  font-size: clamp(22px, 1.7vw, 30px);
+}
+.verification-primary figcaption p {
+  max-width: 660px;
+  margin: 8px 0 0;
+  color: rgba(238, 246, 246, .8);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.verification-equipment-stage {
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  grid-template-rows: 1.18fr .82fr;
+  gap: 8px;
+}
+.verification-equipment-top {
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 1.3fr .7fr .7fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 7px;
+}
+.verification-equipment-bottom {
+  min-height: 0;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+.verification-equipment-card-icp {
+  grid-row: 1 / 3;
+}
+.verification-equipment-card-onh {
+  grid-column: 2 / 4;
+}
+.verification-equipment-card figcaption {
+  right: 14px;
+  bottom: 12px;
+  left: 14px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+}
+.verification-equipment-card figcaption strong {
+  color: #fff;
+  font-size: clamp(14px, 1vw, 18px);
+  line-height: 1.2;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+.verification-footer {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(133, 177, 184, .22);
+}
+.verification-footer p {
+  margin: 0;
+  color: rgba(223, 236, 237, .68);
+  font-size: 14px;
+}
+.verification-footer a {
+  color: #f5f8f8;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.verification-footer a span {
+  margin-left: 9px;
+  color: #2f96f0;
+}
+html[data-language="en"] .verification-followup .panel-heading h3 {
+  font-size: clamp(25px, 1.85vw, 36px);
+  letter-spacing: -.045em;
+}
+html[data-language="ko"] .verification-followup .panel-heading h3 {
+  font-size: clamp(27px, 2.15vw, 41px);
+  letter-spacing: -.045em;
+}
 
 .applications {
   min-height: 100svh;
@@ -547,6 +790,15 @@ html[data-language="ko"] .application-copy h3 {
   .workbench-nav { border-right: 0; flex-direction: row; overflow-x: auto; }
   .workbench-tab { min-width: 210px; min-height: 105px; }
   .workbench-panel { min-height: 100svh; }
+  .verification-followup {
+    height: auto;
+    min-height: 100svh;
+    max-height: none;
+  }
+  .verification-followup .panel-heading h3 { white-space: normal; }
+  .verification-showcase { grid-template-columns: 1fr; }
+  .verification-primary { min-height: 480px; }
+  .verification-equipment-stage { min-height: 660px; }
   .panel-heading { grid-template-columns: 1fr; }
   .spec-builder { grid-template-columns: 150px 45px 1fr; }
 }
@@ -567,6 +819,30 @@ html[data-language="ko"] .application-copy h3 {
   .console-image { height: 260px; }
   .console-data { height: 286px; }
   .verification-scope { grid-template-columns: 1fr; }
+  .verification-followup { padding: 46px 20px 34px; }
+  .verification-primary { min-height: 440px; }
+  .verification-equipment-stage {
+    min-height: 0;
+    display: block;
+  }
+  .verification-equipment-top,
+  .verification-equipment-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+  .verification-equipment-bottom { margin-top: 7px; }
+  .verification-equipment-card,
+  .verification-equipment-card-icp,
+  .verification-equipment-card-onh {
+    min-height: 260px;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .verification-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .supply-map { grid-template-columns: 1fr; }
   .supply-map div + div { border-left: 0; }
   .applications .application-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -9,7 +9,7 @@
       content="Supplier of high-purity rare earth metals, PVD sputtering targets, evaporation materials, CVD precursor chlorides, and high-performance powders."
     />
     <link rel="stylesheet" href="styles.css?v=20260730c" />
-    <link rel="stylesheet" href="concept-d.css?v=17" />
+    <link rel="stylesheet" href="concept-d.css?v=18" />
     <link rel="stylesheet" href="periodic-explorer.css?v=13" />
   </head>
   <body>
@@ -214,50 +214,61 @@
       </section>
 
       <section class="workbench-panel verification-followup" data-workbench-panel="verify">
+              <div class="verification-background" aria-hidden="true">
+                <div class="verification-grain-background"></div>
+                <div class="verification-distribution-background">
+                  <i class="distribution-curve"></i>
+                  <i class="cumulative-curve cumulative-curve-a"></i>
+                  <i class="cumulative-curve cumulative-curve-b"></i>
+                </div>
+              </div>
               <div class="panel-heading">
                 <p>检测与验证</p>
-                <h3>检测不是设备清单，而是采购判断依据。</h3>
+                <h3>质量是我们的信誉和你采购的依据，告诉我们您的检测要求。</h3>
               </div>
-              <div class="evidence-console">
-                <div class="console-image">
-                  <img src="assets/technology/quality-equipment/icp-oes.webp" alt="ICP-OES 元素分析设备" />
-                  <span>ICP</span>
-                </div>
-                <div class="console-data">
-                  <figure>
-                    <img src="assets/technology/quality-equipment/sem.jpg" alt="扫描电子显微镜设备" />
-                    <figcaption><span>SEM</span><small>扫描电子显微镜</small></figcaption>
-                  </figure>
-                  <figure>
-                    <img src="assets/technology/quality-equipment/x-ray-diffractometer.webp" alt="X 射线衍射仪" />
-                    <figcaption><span>XRD</span><small>X 射线衍射仪</small></figcaption>
-                  </figure>
-                  <figure>
-                    <img src="assets/technology/quality-equipment/oxygen-nitrogen-hydrogen-analyzer.jpg" alt="氧氮氢分析设备" />
-                    <figcaption><span>O / N / H</span><small>氧氮氢分析设备</small></figcaption>
-                  </figure>
+              <div class="verification-showcase">
+                <figure class="verification-primary">
+                  <img src="assets/testing-showcase/laboratory-testing.webp" alt="实验室检测人员操作分析设备" />
+                  <figcaption>
+                    <span>QUALITY EVIDENCE</span>
+                    <strong>检测结果清晰可追溯</strong>
+                    <p>样品信息、检测方法与关键数据统一记录，支持采购评估与质量复核。</p>
+                  </figcaption>
+                </figure>
+                <div class="verification-equipment-stage">
+                  <div class="verification-equipment-top">
+                    <figure class="verification-equipment-card verification-equipment-card-icp">
+                      <img src="assets/technology/quality-equipment/icp-oes.webp" alt="ICP-OES 元素分析设备" />
+                      <figcaption><span>ICP-OES</span><strong>元素分析</strong></figcaption>
+                    </figure>
+                    <figure class="verification-equipment-card">
+                      <img src="assets/technology/quality-equipment/sem.jpg" alt="扫描电子显微镜设备" />
+                      <figcaption><span>SEM</span><strong>扫描电镜</strong></figcaption>
+                    </figure>
+                    <figure class="verification-equipment-card">
+                      <img src="assets/technology/quality-equipment/x-ray-diffractometer.webp" alt="X 射线衍射仪" />
+                      <figcaption><span>XRD</span><strong>物相分析</strong></figcaption>
+                    </figure>
+                    <figure class="verification-equipment-card verification-equipment-card-onh">
+                      <img src="assets/technology/quality-equipment/oxygen-nitrogen-hydrogen-analyzer.jpg" alt="氧氮氢分析设备" />
+                      <figcaption><span>O / N / H</span><strong>气体分析</strong></figcaption>
+                    </figure>
+                  </div>
+                  <div class="verification-equipment-bottom">
+                    <figure class="verification-equipment-card">
+                      <img src="assets/technology/quality-equipment/particle-size-analyzer.webp" alt="激光粒度分析设备" />
+                      <figcaption><span>PARTICLE SIZE</span><strong>粒度分析</strong></figcaption>
+                    </figure>
+                    <figure class="verification-equipment-card">
+                      <img src="assets/technology/quality-equipment/density-analyzer.webp" alt="材料密度分析设备" />
+                      <figcaption><span>DENSITY</span><strong>密度分析</strong></figcaption>
+                    </figure>
+                  </div>
                 </div>
               </div>
-              <div class="verification-scope">
-                <div class="verification-scope-main">
-                  <span>AVAILABLE TESTING / 常规检测支持</span>
-                  <ul>
-                    <li>ICP-OES</li>
-                    <li>ICP-MS</li>
-                    <li>C-Scan</li>
-                    <li>SEM</li>
-                    <li>氧氮氢气体检测</li>
-                    <li>光学显微镜</li>
-                    <li>物相 XRD</li>
-                    <li>水含量分析</li>
-                    <li>pH 分析</li>
-                  </ul>
-                </div>
-                <div class="verification-scope-external">
-                  <span>EXTERNAL LAB / 外部专项检测</span>
-                  <strong>GDMS</strong>
-                  <small>由合作实验室完成送检</small>
-                </div>
+              <div class="verification-footer">
+                <p>检测方案可根据材料形态、纯度指标与应用要求进行匹配。</p>
+                <a href="./contact.html">沟通检测要求 <span>→</span></a>
               </div>
       </section>
 
@@ -330,6 +341,6 @@
     <script defer src="site.js?v=20260720c"></script>
     <script defer src="i18n.js?v=20260730a" data-viilaa-i18n="true"></script>
     <script defer src="concept-d.js?v=6"></script>
-    <script defer src="language-integrity.js?v=20260730d"></script>
+    <script defer src="language-integrity.js?v=20260731a"></script>
   </body>
 </html>
