@@ -939,8 +939,7 @@ h3 {
   html.home-page #products,
   html.home-page .material-workbench .workbench-panel,
   html.home-page .verification-followup,
-  html.home-page .applications,
-  html.home-page .quality-band {
+  html.home-page .applications {
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
@@ -957,8 +956,7 @@ h3 {
 
   html.home-page #products,
   html.home-page .workbench-panel,
-  html.home-page .applications,
-  html.home-page .quality-band {
+  html.home-page .applications {
     padding-right: var(--home-content-gutter) !important;
     padding-left: var(--home-content-gutter) !important;
   }
@@ -1336,42 +1334,6 @@ h3 {
 .application-grid p {
   margin: 0;
   color: var(--muted);
-}
-
-.quality-band {
-  min-height: 100svh;
-  display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(320px, 1fr);
-  gap: clamp(30px, 5vw, 72px);
-  align-items: center;
-  padding: clamp(70px, 9vw, 112px) clamp(20px, 5vw, 72px);
-  color: #fff;
-  background: #172026;
-}
-
-.quality-band p:not(.eyebrow) {
-  max-width: 720px;
-  color: rgba(255, 255, 255, 0.74);
-  font-size: 18px;
-}
-
-.quality-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  align-content: start;
-}
-
-.quality-list span {
-  min-height: 58px;
-  display: flex;
-  align-items: center;
-  padding: 14px 16px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 6px;
-  color: rgba(255, 255, 255, 0.86);
-  font-weight: 650;
 }
 
 .rfq-section {
@@ -2459,7 +2421,6 @@ h3 {
   }
 
   .line-section,
-  .quality-band,
   .contact-layout,
   .map-section,
   .catalog-layout {
@@ -2589,7 +2550,6 @@ h3 {
   .metric-strip,
   .contact-form,
   .rfq-guidance,
-  .quality-list,
   .rfq-form {
     grid-template-columns: 1fr;
   }
