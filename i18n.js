@@ -846,7 +846,7 @@
       }
     }
 
-    document.title = `${title} | JXZX Metal`;
+    document.title = `${title} | Viilaa Metal`;
   }
 
   function createLanguageSwitcher(language) {
@@ -943,9 +943,9 @@
   function translateMetadata(language) {
     const path = window.location.pathname.toLowerCase();
     if (path.endsWith("/index.html") || path.endsWith("/")) {
-      document.title = language === "zh" ? "江西中锡金属材料 | 高纯稀土金属与薄膜材料" : language === "ko" ? "JXZX Metal | 고순도 희토류 금속 및 박막 소재" : "JXZX Metal | High-Purity Rare Earth Metals and Thin Film Materials";
+      document.title = language === "zh" ? "江西中锡金属材料 | 高纯稀土金属与薄膜材料" : language === "ko" ? "Viilaa Metal | 고순도 희토류 금속 및 박막 소재" : "Viilaa Metal | High-Purity Rare Earth Metals and Thin Film Materials";
     } else if (path.endsWith("/products.html")) {
-      document.title = language === "zh" ? "产品中心 | 江西中锡金属材料" : language === "ko" ? "제품 센터 | JXZX Metal" : "Product Center | JXZX Metal";
+      document.title = language === "zh" ? "产品中心 | 江西中锡金属材料" : language === "ko" ? "제품 센터 | Viilaa Metal" : "Product Center | Viilaa Metal";
     } else if (path.endsWith("/contact.html")) {
       document.title = language === "zh" ? "联系我们 | 江西中锡金属材料有限公司" : language === "ko" ? "문의 | Jiangxi Viilaa Metal Materials Co., Ltd" : "Contact | Jiangxi Viilaa Metal Materials Co., Ltd";
     } else if (path.endsWith("/our-business.html")) {
