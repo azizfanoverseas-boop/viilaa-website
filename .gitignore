@@ -1,0 +1,17 @@
+dist-site/
+
+# Local review material and dated backups are not website source.
+backups*/
+banner-backups/
+previews/
+tmp-*/
+_docx-review/
+assets/**/backups*/
+assets/**/old-images-*/
+preview-*
+reference-*
+review-*
+*-before-*.html
+*-backup-*.html
+styles-before-*.css
+site-before-*.js

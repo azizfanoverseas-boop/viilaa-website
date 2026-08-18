@@ -631,3 +631,37 @@
 
   requestAnimationFrame(draw);
 })();
+
+(() => {
+  const form = document.querySelector("[data-inquiry-form]");
+  if (!form) return;
+
+  const status = form.querySelector("[data-inquiry-status]");
+  const fieldLabels = [
+    ["name", "Name"],
+    ["company", "Company"],
+    ["email", "Email"],
+    ["phone", "Phone / WeChat"],
+    ["material", "Material / Product"],
+    ["purity", "Purity / Composition"],
+    ["size", "Size / Shape"],
+    ["quantity", "Quantity"],
+    ["message", "Application / Message"],
+  ];
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+
+    const data = new FormData(form);
+    const material = String(data.get("material") || "Material Inquiry").trim();
+    const body = fieldLabels
+      .map(([name, label]) => `${label}: ${String(data.get(name) || "").trim() || "-"}`)
+      .join("\n");
+    const subject = `Material Inquiry - ${material}`;
+    const mailto = `mailto:azizfan@foxmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    if (status) status.textContent = "Your email application is opening. Please review the inquiry and press Send.";
+    window.location.href = mailto;
+  });
+})();

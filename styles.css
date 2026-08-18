@@ -596,6 +596,8 @@ h3 {
   border-radius: 999px;
   font-weight: 750;
   border: 1px solid transparent;
+  font: inherit;
+  cursor: pointer;
 }
 
 .button.primary {
@@ -1575,6 +1577,13 @@ h3 {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 4px;
+}
+
+.form-note {
+  margin: 0;
+  color: #60717a;
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .map-section {
