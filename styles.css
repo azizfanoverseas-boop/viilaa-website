@@ -996,8 +996,9 @@ h3 {
 }
 
 #products .product-line-summary {
-  max-width: none;
-  white-space: nowrap;
+  max-width: 82ch;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 #products .section-head .eyebrow,
