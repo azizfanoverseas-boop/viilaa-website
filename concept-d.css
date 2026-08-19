@@ -198,14 +198,25 @@
 .element-card small { display: block; font-weight: 700; }
 .element-card i { position: absolute; left: 18px; bottom: 14px; font-size: 13px; font-style: normal; }
 .spec-arrow { color: var(--wb-aqua); text-align: center; font-size: 36px; }
-.form-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.form-gallery {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3px;
+  overflow: hidden;
+}
 .form-gallery figure {
   min-width: 0;
   margin: 0;
   position: relative;
   background: #e8eded;
 }
-.form-gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+.form-gallery img {
+  width: 100%;
+  height: clamp(220px, 24vw, 380px);
+  object-fit: cover;
+  display: block;
+}
 .form-gallery figcaption {
   padding: 13px;
   color: #0b1718;
@@ -387,6 +398,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: clip;
   animation: none;
 }
 .workbench-panel[data-workbench-panel="route"],
@@ -435,6 +447,10 @@
 .workbench-panel[data-workbench-panel="spec"] .spec-rail small {
   color: #687980;
 }
+.workbench-panel[data-workbench-panel="spec"] .panel-heading h3 {
+  white-space: normal;
+  text-wrap: balance;
+}
 .workbench-panel[data-workbench-panel="spec"] .spec-rail {
   border-color: var(--wb-line);
 }
@@ -462,6 +478,7 @@
   height: 100svh;
   max-height: 100svh;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr) auto;
   gap: clamp(14px, 2vh, 24px);
   position: relative;
@@ -474,6 +491,9 @@
   background:
     radial-gradient(circle at 88% 4%, rgba(33, 102, 103, .24), transparent 34%),
     linear-gradient(145deg, #071417 0%, #061113 56%, #071619 100%);
+}
+.workbench-panel.verification-followup {
+  overflow: hidden;
 }
 .verification-followup > *:not(.verification-background) {
   position: relative;
@@ -491,7 +511,8 @@
   max-width: none;
   font-size: clamp(30px, 4vw, 50px);
   line-height: 1.08;
-  white-space: nowrap;
+  white-space: normal;
+  text-wrap: balance;
 }
 .verification-background {
   position: absolute;
@@ -838,6 +859,7 @@ html[data-language="ko"] .application-copy h3 {
   .spec-builder { grid-template-columns: 1fr; }
   .spec-arrow { transform: rotate(90deg); }
   .form-gallery { grid-template-columns: 1fr; }
+  .form-gallery img { height: clamp(240px, 80vw, 420px); }
   .element-card { width: 180px; }
   .spec-rail { grid-template-columns: 1fr 1fr; }
   .evidence-console { height: auto; grid-template-columns: 1fr; }
